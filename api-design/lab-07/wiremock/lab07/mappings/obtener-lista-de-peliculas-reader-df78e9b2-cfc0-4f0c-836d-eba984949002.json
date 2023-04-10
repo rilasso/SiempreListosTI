@@ -1,0 +1,64 @@
+{
+  "id" : "df78e9b2-cfc0-4f0c-836d-eba984949002",
+  "name" : "Obtener lista de películas (reader)",
+  "request" : {
+    "urlPath" : "/api/movies",
+    "method" : "GET",
+    "headers" : {
+      "API-Version" : {
+        "contains" : "v2"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"movies\": [\n    {\n      \"id\": 4,\n      \"title\": \"Pulp Fiction\",\n      \"release_date\": \"1994-10-14\",\n      \"description\": \"The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.\",\n      \"rating\": 8.9\n    }\n  ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "df78e9b2-cfc0-4f0c-836d-eba984949002",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-04T23:27:21.08916578Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "id" : {
+                "type" : "integer",
+                "description" : "ID de la película"
+              },
+              "title" : {
+                "type" : "string",
+                "description" : "Título de la película"
+              },
+              "release_date" : {
+                "type" : "string",
+                "description" : "Fecha de lanzamiento de la película"
+              },
+              "description" : {
+                "type" : "string",
+                "description" : "Descripción de la película"
+              },
+              "rating" : {
+                "type" : "number",
+                "description" : "Clasificación de la película en una escala de 0 a 10"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 1,
+  "postServeActions" : [ ]
+}

@@ -1,0 +1,40 @@
+{
+  "id" : "5e425556-5a14-49e4-89fc-6ad2861f84da",
+  "name" : "Consultar el saldo de un usuario (application/json)",
+  "request" : {
+    "urlPath" : "/usuario/4258951087961709784/saldo",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"saldo\" : 1200.5\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5e425556-5a14-49e4-89fc-6ad2861f84da",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T00:28:21.595702294Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "saldo" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 2,
+  "postServeActions" : [ ]
+}

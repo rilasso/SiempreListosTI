@@ -1,0 +1,29 @@
+{
+  "id" : "6006e076-0308-4460-8331-c662e1b877f3",
+  "name" : "Get a song by ID - 401",
+  "request" : {
+    "urlPath" : "/songs/7564655870752979346",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 204,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "6006e076-0308-4460-8331-c662e1b877f3",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.941421844Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 12,
+  "postServeActions" : [ ]
+}

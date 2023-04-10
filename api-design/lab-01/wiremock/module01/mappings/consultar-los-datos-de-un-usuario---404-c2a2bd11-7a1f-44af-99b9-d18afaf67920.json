@@ -1,0 +1,29 @@
+{
+  "id" : "c2a2bd11-7a1f-44af-99b9-d18afaf67920",
+  "name" : "Consultar los datos de un usuario - 404",
+  "request" : {
+    "urlPath" : "/usuario/7564655870752979346",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "c2a2bd11-7a1f-44af-99b9-d18afaf67920",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T00:28:21.591341734Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 5,
+  "postServeActions" : [ ]
+}

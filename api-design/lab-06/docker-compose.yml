@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  mock-server:
+    image: wiremock/wiremock:2.35.0
+    ports: 
+      # - "8080:8080"
+      - "8443:8443"
+    volumes:
+      - ./wiremock:/home/wiremock
+    command: --https-port 8443 --verbose
+# https://wiremock.org/studio/docs/getting-started/docker/
+
+# https://localhost:8443/__admin/mappings 
+# http://localhost:8080/__admin/mappings 

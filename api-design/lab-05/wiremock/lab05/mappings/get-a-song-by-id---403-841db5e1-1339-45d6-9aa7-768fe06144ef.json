@@ -1,0 +1,25 @@
+{
+  "id" : "841db5e1-1339-45d6-9aa7-768fe06144ef",
+  "name" : "Get a song by ID - 403",
+  "request" : {
+    "urlPath" : "/songs/3831662765844904176",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 403
+  },
+  "uuid" : "841db5e1-1339-45d6-9aa7-768fe06144ef",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.941863091Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 11
+}

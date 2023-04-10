@@ -1,0 +1,29 @@
+{
+  "id" : "63732a81-66c2-451a-b382-ff96dcc8aed6",
+  "name" : "Consultar el saldo de un usuario - 404",
+  "request" : {
+    "urlPath" : "/usuario/7564655870752979346/saldo",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "63732a81-66c2-451a-b382-ff96dcc8aed6",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T00:28:21.59636117Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 1,
+  "postServeActions" : [ ]
+}

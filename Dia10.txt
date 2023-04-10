@@ -1,0 +1,76 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Metodos comunes para la gestion de versiones en una API REST
+
+    Versionada en la URL
+    Versionado en el header
+    Versionado por parametros
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Versionamineto Semántico
+
+    Mayor           X
+    Menor           Y
+    Parche          Z
+
+
+Version X.Y.Z
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cambios Retrocompatible
+
+    Cambios de un API no deben tener impactos en el consumidor 
+
+    Los cambios deben ser retrocompatibles con las versiones anteriores
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejemplos de la implementación de versionado de API en aplicaciones reales
+
+    Twitter
+    GitHub
+    AWS
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Por qué es importante documentar una API REST?
+
+    Facilita la compresión
+    Ahorra Tiempo y Recursos
+    Mejora la calidad del código
+    Fomenta la colaboración
+    Simplifica la integración
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Métodos comunes para la docimentación de una API REST
+
+    Swagger / OpenAPI
+        Version 3.0 al dia de hoy 
+        https://swagger.io/specification/v2/
+
+    RAML
+    RESTful API Modeling Language
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Por qué es importante la optimización de la performance y la escalabilidad de una API REST?
+
+    Experiencia de Usuario
+    Carga de Trabajo
+    Costos
+    Competencia
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,56 @@
+{
+  "id" : "0620503d-f170-4d81-8b65-a2720920d8fa",
+  "name" : "Actualizar un producto existente (application/json)",
+  "request" : {
+    "urlPath" : "/api/v1/producto/123456",
+    "method" : "PUT",
+    "headers" : {
+      "content-type" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "0620503d-f170-4d81-8b65-a2720920d8fa",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T03:40:11.909461853Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "required" : [ "descripcion", "id", "nombre", "precio" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "integer",
+              "format" : "int64"
+            },
+            "nombre" : {
+              "type" : "string"
+            },
+            "descripcion" : {
+              "type" : "string"
+            },
+            "precio" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 3,
+  "postServeActions" : [ ]
+}

@@ -1,0 +1,34 @@
+{
+  "id" : "0a3f21b5-a6de-4703-9db1-235d7e45f7b7",
+  "name" : "Get all songs - 401",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "absent" : true
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "0a3f21b5-a6de-4703-9db1-235d7e45f7b7",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.934226158Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 18,
+  "postServeActions" : [ ]
+}

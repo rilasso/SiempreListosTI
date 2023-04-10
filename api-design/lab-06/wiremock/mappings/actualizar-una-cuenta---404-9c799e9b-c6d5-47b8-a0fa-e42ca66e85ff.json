@@ -1,0 +1,25 @@
+{
+  "id" : "9c799e9b-c6d5-47b8-a0fa-e42ca66e85ff",
+  "name" : "Actualizar una cuenta - 404",
+  "request" : {
+    "urlPath" : "/accounts/5683311091615826937",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "9c799e9b-c6d5-47b8-a0fa-e42ca66e85ff",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.16086186Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 2
+}

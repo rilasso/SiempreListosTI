@@ -1,0 +1,43 @@
+{
+  "id" : "7cf903cf-d7ff-4f76-80ba-ba40cf172d19",
+  "name" : "Get products operation (application/json)",
+  "request" : {
+    "urlPath" : "/product",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ }",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7cf903cf-d7ff-4f76-80ba-ba40cf172d19",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-02-14T21:55:53.400404768Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "allOf" : [ {
+            "type" : "array",
+            "description" : "",
+            "items" : {
+              "$ref" : "#/components/schemas/product"
+            }
+          } ]
+        }
+      }
+    }
+  },
+  "insertionIndex" : 7
+}

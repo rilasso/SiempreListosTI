@@ -1,0 +1,40 @@
+{
+  "id" : "83e59641-63ac-4943-997f-5de6fb7bc77a",
+  "name" : "Obtener información utilizando token",
+  "request" : {
+    "urlPath" : "/token",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : \"2gdt0qxz\",\n  \"message\" : \"Non ab ea vitae eos. Ullam eaque voluptatem et provident. Aspernatur voluptatem voluptates hic ad voluptates esse.\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "83e59641-63ac-4943-997f-5de6fb7bc77a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.636680765Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 2
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "604421a8-09e1-4508-a520-e0f1beae2c5a",
+  "name" : "Update a song by ID - 200",
+  "request" : {
+    "urlPath" : "/songs/8628573443697346664",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 200
+  },
+  "uuid" : "604421a8-09e1-4508-a520-e0f1beae2c5a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.943037202Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 9
+}

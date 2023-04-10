@@ -1,0 +1,59 @@
+{
+  "id" : "ade9c3cb-c999-450b-a37c-8894d2d6e2b9",
+  "name" : "Obtener lista de películas (2.0.0.)",
+  "request" : {
+    "urlPath" : "/api/v2.1/movies",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"movies\": [\n    {\n      \"id\": 1,\n      \"title\": \"The Shawshank Redemption\",\n      \"description\": \"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.\",\n      \"rating\": 9.3\n    },\n    {\n      \"id\": 2,\n      \"title\": \"The Godfather\",\n      \"description\": \"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.\",\n      \"rating\": 9.2\n    },\n    {\n      \"id\": 3,\n      \"title\": \"The Dark Knight\",\n      \"description\": \"When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.\",\n      \"rating\": 9.0\n    }\n  ]\n}\n",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ade9c3cb-c999-450b-a37c-8894d2d6e2b9",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-04T23:27:21.08916578Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "id" : {
+                "type" : "integer",
+                "description" : "ID de la película"
+              },
+              "title" : {
+                "type" : "string",
+                "description" : "Título de la película"
+              },
+              "release_date" : {
+                "type" : "string",
+                "description" : "Fecha de lanzamiento de la película"
+              },
+              "description" : {
+                "type" : "string",
+                "description" : "Descripción de la película"
+              },
+              "rating" : {
+                "type" : "number",
+                "description" : "Clasificación de la película en una escala de 0 a 10"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 3,
+  "postServeActions" : [ ]
+}

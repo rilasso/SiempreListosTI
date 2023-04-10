@@ -1,0 +1,34 @@
+{
+  "id" : "f5e02772-ddc6-45d4-970e-bd0242644e8e",
+  "name" : "Get all songs - 200",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "equalTo" : "Bearer token1234"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"song_name\": \"Song Title\",\n  \"artist_name\": \"Artist Name\"\n}",
+    "headers" : { }
+  },
+  "uuid" : "f5e02772-ddc6-45d4-970e-bd0242644e8e",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.926003322Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 19,
+  "postServeActions" : [ ]
+}

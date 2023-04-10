@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    ports:
+      - "9080:8080"
+
+# https://hub.docker.com/r/swaggerapi/swagger-editor/tags
+# https://github.com/swagger-api/swagger-editor
+
+  mock-server:
+    image: up9inc/wiremock-studio:2.32.0-18
+    ports: 
+      - "8000-8100:8000-8100"
+      - "9000:9000"
+    volumes:
+      - ./wiremock:/home/wiremock
+
+# https://wiremock.org/studio/docs/getting-started/docker/

@@ -1,0 +1,232 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desarrollo de Calidad Mejores Prácticas de Desarrollo
+
+Juan Jose Lam
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Objetivos
+    
+    Tema de Calidad de Software
+    Administración de la Configuración
+    Entender las mejores prácticas de desarrollo orientada a objetos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calidad del Producto Software
+
+    Adecuación Funcional
+        Completitud Funcional
+        Correción Funcional
+        Pertenencia Funcional
+    Eficiencia de Desempeño 
+        Comportamiento temporal
+        Utilización de recursos
+        Capacidad
+    Compatibilidad
+        Coexistencia
+        Interoperabilidad
+    Usabilidad
+        Intangibilidad 
+        Aprendizaje
+        Operabilidad
+        Protección frente a errores de usuario
+        Estética
+        Accesibilidad
+    Fiabilidad
+        Madurez
+        Disponibilidad
+        Tolerancia a Fallos
+        Capacidad de recuperación
+    Seguridad
+        Confidencialidad 
+        IntegridadNo repudio
+        Autenticidad
+        responsabilidad
+    Mantenibilidad
+        Modularidad
+        Reusabilidad
+        Analizabilidad
+        Capacidad de ser modificado
+        Capacidad de ser probado
+    Portabilidad
+        Adpatabilidad
+        Falidad de Instalación 
+        Capacidad de ser reemplazado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+Funcionalidad
+    
+    E2E es end to end
+
+    Algunas pruebas para sabes si cumplimos o no con la funcionalidad son las pruebas de regresión, 
+        pruebas del sistema, pruebas unitarias, pruebas de procedimiento
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rendimiento
+    
+    Prueba de Carga, Resistencia, Peak
+
+    Escalamiento Vertical
+        Expandir Servidor
+    
+    Escalamiento Horizontal
+        Varios Servidores
+        (Granja de Servidores)
+
+    NeoLoad se utiliza para las pruebas de Desempeño
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Compatibilidad
+
+    Pruebas de Conformidad, Compatibilidad, Interoperabilidad y Conversión
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usabilidad
+
+    Pruebas de UX y de Accesibilidad (Localización e Internacionalización)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Confiabilidad
+
+    Pruebas de Respaldo, Recuperación y Recuperación de Desastres
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seguridad
+
+    Pruebas de penetración, Pruebas de vulnerabilidad, ethical hacking, Static Analysis
+
+    Sonarqube, BlackDuck
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mantenibilidad
+
+    Prueba de Revision de Pares, Análisis Estáticos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Portabilidad
+
+    Se realizan pruebas para verificar que tan facil es instalar y desinstalar en un entorno especifico
+    La facilidad de mover una aplicacion para que se pueda utilizar en diferentes entornos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Administración de la Configuración
+
+    La gestión de Configuración de software (GCS/SCM) es un conjunto de actividades diseñadas para 
+        identificar y definir los elementos en el sistema que probablemente para identficar y definir 
+        los elementos en el sistema que probablemente cambien, controlando el cambio de estos elementos 
+        a lo larfo de su ciclo de vida, estableciendo relaciones entre ellos, definiendo mecanismos para 
+        gestionar distintas versiones de estos elemenots, y auditando e informando de los cambios realizados.
+    
+    ¿Cuál es el Propósito?
+        Establecer y mantener la integridad de los productos de software a través del ciclo de vida del 
+            proceso de software
+    
+    ¿Por qué es necesario?
+        Los requerimientos del sistema siempre cambian durante su desarrollo y su uso, y se tienen que incopora
+            estos requerimeintos en nuevas versiones del sistema
+    
+    Bitbucket
+    Docker
+
+    Equipo de Colaboración Oportuna (ECO)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Objetivos Agile
+
+    Contruir mas Rapido
+        Lanzar productos en cada sprint / diario / muchas veces al dia
+    
+    Esperar el Cambio
+        Los patrocinadores de negocios permitieron / promovieron los requisitos de cambio
+
+    Calidad de Producción
+        Cada sprint / entrega debe estar "Listo para la producción"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Practicas de ingenieria ofrecen las herramientas necesarias para cumplir Objetivos
+
+    Gestion de Codigo Fuente
+    Revision del codigo de Pares
+    Ambiente
+    Refractoring
+    Examen de la unidad
+    Integración continua
+    Pruebas automatizadas
+    Programación en pareja
+    Desarrollo impulsado a pruebas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+los 4 principios de buenas prácticas de codigo a seguir
+
+    YAGNI (you ain't gonna need it)
+    DRY (don't repeat yourself)
+    SOLID
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+YAGNI (you ain't gonna need it)
+
+    Descripción
+        No sobrepensar el desarrollo y gastar tiempo desarrollando con el objetivo de cumplir futuros requerimientos que podrían nunca llegar
+    
+    Beneficios
+        Enfoca el desarrollo simple a necesidades inmediatas
+        Evita generar innecesaria complejidad al codigo base
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DRY (don't repeat yourself)
+
+    Descripción
+        Escribe código una sola vez, usala seguido
+        Aplica a todas las formas de desarrollo posibles:
+            Databases
+            iOS
+            WebApps
+            API Services
+            etc...
+    Beneficios
+        Provee un punto central de responsabilidad
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SOLID
+
+    S ingle Responsibility Principle
+        Descripción
+            Una clase solo debe tener una unica responsabilidad y, por ende, una unica razon para cambiar
+    O pen / Closed Principle
+        Descripción
+            Entidades deben ser abiertas a extensiones mas no a notificaciones
+    L iskov Substitution Principle
+        Descripción
+            Subtipos de clase deben poder ser subtituidos por su tipo base
+    I nterface Segregation Principle
+        Descripción
+            Clase consumidoras no deben ser forzados a depender de métodos que ellos no usan
+    D epency Inversion Principle
+        Descripción
+            Clase de alto nivel no bene depender de clases de bajo nivel
+            Ambos deben trabajar bajo abstracciones
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Self-Documenting Code
+    Descripción
+        Comentar el porqué una porción de código hace lo que hace es beneficioso a otros desarrolladores
+        Comentar el qué o el cómo es una falla del desarrollador de no poder expresarse en código
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

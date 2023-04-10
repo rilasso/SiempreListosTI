@@ -1,0 +1,33 @@
+{
+  "id" : "f042488b-b143-4e08-8373-042abbf94754",
+  "name" : "Login operation - 401",
+  "request" : {
+    "urlPath" : "/user/login",
+    "method" : "GET",
+    "queryParameters" : {
+      "password" : {
+        "equalTo" : "5vmue23e0wp3nf8d287sq3va24nbez8ohgys50y4l9wlx90dm7ca7al61irlmt0pkzplceg0fdekh4hn5pmypmsnykx5etu26qjcbz5t9vcbmy5w07t7a41uy7cz8jrnsawvunqwfmqxve7zuvot8"
+      },
+      "username" : {
+        "equalTo" : "romaine.lindgren"
+      }
+    }
+  },
+  "response" : {
+    "status" : 401
+  },
+  "uuid" : "f042488b-b143-4e08-8373-042abbf94754",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-02-14T21:55:53.391179673Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "loginUser"
+      }
+    }
+  },
+  "insertionIndex" : 8
+}

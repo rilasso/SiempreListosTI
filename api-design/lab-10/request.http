@@ -1,0 +1,19 @@
+
+#Operacion
+### 200
+GET http://localhost:8000/user/login?username=ivan&password=123456789  HTTP/1.1
+x-request-id : 1234567890
+x-channel: Core
+
+###
+GET http://localhost:8000/product
+authorization : Bearer 3bphcreno1
+x-request-id : 1234567890
+x-channel: Core
+
+
+###
+GET http://localhost:8000/product/1
+authorization : Bearer 3bphcreno1
+x-request-id : 1234567890
+x-channel: Core

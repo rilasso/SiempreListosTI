@@ -1,0 +1,29 @@
+{
+  "id" : "5b747959-0fcc-4ee1-a6b8-04514024ed5b",
+  "name" : "Eliminar un producto existente - 204",
+  "request" : {
+    "urlPath" : "/api/v1/producto/123456",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 204,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "5b747959-0fcc-4ee1-a6b8-04514024ed5b",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T03:40:11.910872843Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 1,
+  "postServeActions" : [ ]
+}

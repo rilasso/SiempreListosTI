@@ -1,0 +1,34 @@
+{
+  "id" : "778bf774-f12c-4069-948f-edf73e4b04cb",
+  "name" : "Authenticate user - 204",
+  "request" : {
+    "urlPath" : "/api/login",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "absent" : true
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "778bf774-f12c-4069-948f-edf73e4b04cb",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.947529097Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 0,
+  "postServeActions" : [ ]
+}

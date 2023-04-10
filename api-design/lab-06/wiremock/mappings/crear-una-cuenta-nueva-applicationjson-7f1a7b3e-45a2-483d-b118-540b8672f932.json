@@ -1,0 +1,56 @@
+{
+  "id" : "7f1a7b3e-45a2-483d-b118-540b8672f932",
+  "name" : "Crear una cuenta nueva (application/json)",
+  "request" : {
+    "urlPath" : "/accounts",
+    "method" : "POST",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\n  \"balance\" : 7.933879852940777E37,\n  \"name\" : \"Katharyn Paucek\",\n  \"active\" : false,\n  \"currency\" : \"USD\",\n  \"id\" : 4220651705025283437\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7f1a7b3e-45a2-483d-b118-540b8672f932",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.145891838Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "balance" : {
+              "type" : "number",
+              "format" : "float"
+            },
+            "currency" : {
+              "type" : "string",
+              "enum" : [ "USD", "EUR", "MXN" ]
+            },
+            "active" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 7
+}

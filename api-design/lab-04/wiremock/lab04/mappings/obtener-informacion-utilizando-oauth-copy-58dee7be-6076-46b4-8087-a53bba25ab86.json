@@ -1,0 +1,47 @@
+{
+  "id" : "58dee7be-6076-46b4-8087-a53bba25ab86",
+  "name" : "Obtener token utilizando OAuth ",
+  "request" : {
+    "urlPath" : "/api/v1/oauth/token",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "contains" : "application/x-www-form-urlencoded"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\r\n    \"access_token\": \"e848771f-7555-4507-9e3f-8c8d6ecc781f\",\r\n    \"token_type\": \"Bearer\",\r\n    \"expires_in\": 3600,\r\n    \"scope\": \"core\"\r\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "58dee7be-6076-46b4-8087-a53bba25ab86",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.644752206Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 7,
+  "postServeActions" : [ ]
+}

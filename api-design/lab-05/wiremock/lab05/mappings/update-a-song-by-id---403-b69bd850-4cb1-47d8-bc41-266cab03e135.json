@@ -1,0 +1,25 @@
+{
+  "id" : "b69bd850-4cb1-47d8-bc41-266cab03e135",
+  "name" : "Update a song by ID - 403",
+  "request" : {
+    "urlPath" : "/songs/8553843922367552382",
+    "method" : "PUT"
+  },
+  "response" : {
+    "status" : 403
+  },
+  "uuid" : "b69bd850-4cb1-47d8-bc41-266cab03e135",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.94389542Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 7
+}

@@ -1,0 +1,92 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Introducción a GIT
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sistema de Control de Versiones 
+    
+    Es una herramienta fundamental para el desarrollo de cualquier proyecto.
+    Permiten mantener un historial de cambios en los archivos, evitar la 
+        pérdida de datos, facilitar la colaboración y mejorar la gestión de versiones
+    
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es GIT?
+
+    Sistema de control de versiones 
+    Nos perminte trabajar de forma colaborativa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Archivos de Texto y binarios
+
+    Crea una copia completa de cada archivo
+    No es necesario guardas todos los archivos binarios 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comandos Básicos de GIT
+
+    git init                    Crear un repositorio
+                                Configura el directoria para poder consolidar las versiones 
+    git add <archivo>           Subir un archivo al repositorio
+    git add .                   Subir todos los archivos
+    git commit -m "Mensaje"     Subir los archivos de la versión
+                                Sirve para luego hacer un push
+    git diff <archivo>          Muestra las diferencias entre un archivo en el repositorio 
+    git diff <hash><archivo>    Hash es el numero de identificación del commit
+                                Head, es el ultimo commit
+    git status                  Ver cambios que se han agregado al Staging
+    git branch <CurNombre><NuevoNombre>     Para crear un nuevo branch
+    git checkout <Nombre>       Se utiliza para entrar al branch
+    git merge <Nombre>          Es el punto de una historia que estoy uniendo con otra
+    git checkout -b <Nombre>    Se crea un branch desde done estas
+    git revert <ID>             Revert al id del commit es estilo un reset --soft
+    git reset                   Va devuelta al head del branch 
+                                --soft o --hard
+                                    Soft: guarda los cambias y reset a el branch
+                                    Hard: va al branch y elimina todos los cambios hechos
+    git log                     Te muestra todos los commits en el local   
+    git remote                  Te deja agregar, ver y borrar conecciones a un repositorio                   
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Peticiones de Cambio / Pull request
+    Es una forma de que un colaborador revise y apruebe tus cambios.
+    Se hace antes de fusionarlo con la rama principal.
+    Es una practica común en proyectos colaborativos. Se revisa la 
+        calidad del código y evitar errores.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Merge entre ramas y resoluciones de conflictos
+
+    El merge se puede hacer de forma automática o manual
+    Si git detecta problemas en el merge con la rama git notifica si hay algún conflicto 
+    Si no hay conflictos el merge se hara automáticamente.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TOKEN: 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
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Forks 
+
+    Funciona para clonar un repositorio como si fuese tuyo
+    Huawei es un fork de android
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

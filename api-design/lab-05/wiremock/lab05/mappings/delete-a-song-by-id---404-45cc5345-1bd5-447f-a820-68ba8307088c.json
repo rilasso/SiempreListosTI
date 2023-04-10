@@ -1,0 +1,25 @@
+{
+  "id" : "45cc5345-1bd5-447f-a820-68ba8307088c",
+  "name" : "Delete a song by ID - 404",
+  "request" : {
+    "urlPath" : "/songs/6410576364588137014",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "45cc5345-1bd5-447f-a820-68ba8307088c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.946735943Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 2
+}

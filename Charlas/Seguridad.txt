@@ -1,0 +1,353 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Quien es el responsable?
+
+    Programador
+    Negocios 
+    Seguridad
+    Cliente
+    Hacker
+
+    Se tiene que ver que implementaciones pueden afectar al sistema
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+La seguridad es responsabilidad de todos
+
+    Equilibrio
+    (Funcionalidad - Desarrollo - Seguridad)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Principales Problemas
+
+    COsto de solución de vulnerabilidad
+    Atrasos en la entrega del proyecto
+    Perdidas económicas
+    Perdidas de clientes
+
+    |                  *
+    |              *   *
+    |          *   *   *
+    |      *   *   *   *
+    |  *   *   *   *   *
+    |________________________
+        A   D   C   T   D
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cambiando el Chip
+
+    La aplicación no tiene vulnerabilidades
+    La aplicación es interna, nadie la va a atacar
+    La aplicación es segura porque está detrás de un firewall
+
+    Web Aplication Firewall
+
+    El codigo debe ser lo suficientemente seguro y robusto para poder aguantar cualquier ataque
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nuestro Objetivo
+
+    Prevención
+    Monitoreo de aplicaciones
+    Seguimiento de las vulnerabilidades
+
+    Para poder encontrar alguna falla en cualquier punto de la arquitectura que se esta desarrollando
+    
+    Conciencia + Protección adecuada = Seguridad
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que debemos proteger?
+
+    Confidencialidad
+        Uno no puede acceder a la información de un cliente
+        Ni al servidor
+        No tener ningun archivo con contraseñas 
+
+    Disponibilidad
+        Como mantener seguro el sistema para que no haya una interrupción
+
+    Integridad
+        Mantener la información confidencial
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seguridad en el SDLC
+
+    Requerimiento
+        Funcionalidad
+        Seguridad
+    Diseño 
+        UX
+        UI
+        Estándares
+    Desarrollo
+        FrontEnd
+        BackEnd
+        Mejores Prácticas
+        Esquemas
+    Pruebas
+        Depuración
+        Revisión
+        vulnerabilidad
+    Despliegue
+        Configuración
+        Seguridad
+    Mantenimiento
+        Seguimiento
+        Actualización
+        Parches
+
+ ^ Seguridad 
+ |
+ |   Regulaciones, políticas
+ |   Estándares de Seguridad
+ |
+ |   Validación de Datos
+ |   Mejores Prácticas
+ |   
+ |   Análisis Estáticos (SAST)
+ |   Análisis Dinámico (DAST)
+ |   Análisis SCA
+ |
+ |   Mantenimiento de Librerías
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estándares 
+    OWASP   - Open Web Application Security Project
+    PCI     - Security Standards Council (Tarjetas de Credito)
+    CVSS    - Own Vulnerability Standar, es el sistema de medición de vulnerabilidad
+    NIST    - 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de vulnerabilidades
+
+    Prueba de seguridad de aplicaciones estáticas - SAST
+    Prueba de seguridad de aplicaciones dinámicas - DAST
+    Análisis de composición de software - SFA
+
+    Desarrollo - Pull Request - SonarQube - Black Duck - Fluid Attacks - Merge
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seguridad por Oscuridad
+
+    La seguridad por ocuridad u ocultación es una metodología que intenta planear 
+        la seguridad de un sistema a partir del secreto de sus técnicas
+    La información beneficia al atacante. Nunca beneficia a un defensor
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Defensa en Seguridad
+
+    Establecer capas de medidas defensivas para ralentizar el avance de un atacante
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Principio de menor privilegio
+
+    Toda identidad debe poseer la menor cantidad de privilegios
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Principio de menor privilegio
+
+Acción                                      Permisos
+
+Agregar un Nuevo Usuario                    Sin Rol Asignado, no posee acceso a nada
+Caracter de entrada que genera errores      Defino una lista de caracteres permitidos y rechazo todo lo demas
+Creacion de una carpeta                     Ningun usuario posee acceso hasta que se le otorgue de forma explicita
+Acceso de Red del Servidor A al Servidor B  Denegar el acceso a todos los puertos, se le permite el acceso a una lista puntual de servicios permintidos
+FrontEnd recibe datos del BackEnd           Debe contener la menor cantidad de información posible
+Acceso al Repositorio                       
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Límites de Confianza
+
+    Externo - No Confiable
+
+    Organización 
+        Iterno - Confiable
+        Externo - No Confiable
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Validacion de entradas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Entrada de Datos no confiables
+
+    Cualquier informacion es valiosa para un atacante
+    Cada entrada 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Los datos confidenciales pueden ser cualquier informacion que se debe proteger contra un accesso no autorizado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Listas Negras 
+    Se busca lo que no se permite y se permite todo lo demás 
+
+Listas Blancas
+    Se busca lo que se permite y se rechaza todo lo demás
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exposición de datos confidenciales
+
+    Injection Flaws
+    Broken Access Control
+    Man-In-Middle Attack
+    Weak Encryption
+    Flawed Protection
+    Excessive Data in Server Response
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Enumeración de Usuarios
+
+    Manejo de factores de autenticación combinados
+    Revisar la logica de validacion, limitar respuestas
+    Manejo de mensajes genericos
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fallos en la autenticación
+
+    Ataques de fuerza bruta
+    Mecanismos de restauración de credenciales inseguro
+    Almacenamiento de contraseñas
+    ID de sesión expeustos (URL, contenido HTML)
+    Captura o fijacion de sesión
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Recomendaciones para credenciales
+
+    Evitar el uso de constaseñas predeterminadas, débiles o triviales, por ejemplo password1, admin/admin
+    Usuarios y contraseñas iguales
+    Se deben utilizar algoritmos criptograficos seguros
+    Archivos de Configuración no deben contener credenciales
+    Se debe invalidar la sesion de cada vez que se recupere o modifique una contraseña
+    Todas las constaseñas deben tener un hash unidireccional
+    Control de intentos fallidos
+    Historial de contraseñas
+    Complementar con MFA (Biometría, Token)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Recomendaciones para Sesiones
+
+    Longitud - mínimo 128 bit (16 caracteres)
+    Almacenamiento (Base de Datos)
+    Asociado a Dirección IP, Id del usuario, User Agent
+    Tiempo de vigencia de la sesión definido
+
+    No transmitir el identificador de sesión coo un parámetro
+    Evitar el manejo de sesiones concurrentes o simultáneas
+    No exponer el ID de sesión en URL, mensaje de error, ni logs
+    Si una sesión fue establecida antes del login, cerrar dicha sesión inicial
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Riesgos de Control de Acceso
+
+    Divulgación de información no autorizada
+    Escalacion de privilegios
+    Alteración o eliminación de datos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Perdida de Control de Acceso - Mitigantes
+
+    Aplicar el prinicpio de menor privilegio
+    Denegar el acceso de forma predeterminada
+    Implementar un solo mecanismo de acceso centralizado
+    No utilizar roles incrustados en el código
+    Invalidar acceso despues de cerrar la sesión
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fallas por inyección
+
+    SQL inyección
+        Bypass autenticación
+        Ejecución de código malisioso
+        Extracción de datos
+        Escalación de privilegios
+        Ejecución de código remoto
+    
+    Cross Site Scripting
+        Tipo XSS
+            Reflejado 
+            Almacenado
+            Dom-Based
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fallas Criptográficas 
+
+    Riesgo: Exposición de Datos
+        Constraseñas
+        Información personal de los clientes
+        Información financiera
+        Tarjetas de crédito
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cifrado o Hash
+
+    Cifrado 
+        Cofifica el mensaje generando un producto que contiene el mensaje en forma cifrada
+        Uso de Llaves
+        Tamaño del producto o variable
+
+    Hash 
+        Algoritmo matemático que permite convertir un conjunto de datos arbitrario en una cadena 
+            de datos de resumen, con un tamaño fijo significativamente menor al de los datos de origen
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Recomendaciones a nivel de BackEnd
+
+    El código de BackEnd debe emplear sufciientes validaciones para detectar todas las excepciones y evitar la fuga de informacion valiosa
+
+        Valirdar que los datos correspondan al usuario dueño de la sesion
+        Realizar todas las validaciones de reglas que estan en el FrontEnd para que nada se escape
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Eliminar componentes que no esten en uso 
+    Repositorio, codigo antiguo o irrelevante
+
+Remueva los comentarios en el codigo de produccion que puedan revelar informacion sobre los servidos o informacion sensible
+
+Eliminar el uso de impresion de errores en la consola (console.error)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No custom error. Debe haber un mensaje generico a aquellos errores que no estan controlados
+No mostrar informacion sensitiva
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Proposito de los logs
+
+Investigar 
+    Buscar la raiz de incidentes operativos o de seguridad
+Modo debug no debe ser utilizado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Errores de validacion de entrada
+Eventos de autenticacion incluyendo ingreso exitoso o fallidos
+Eventos de autorización incluyendo acceso exitos o fallido
+Fallos de gestión de sesion como alteraciones del Session ID
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

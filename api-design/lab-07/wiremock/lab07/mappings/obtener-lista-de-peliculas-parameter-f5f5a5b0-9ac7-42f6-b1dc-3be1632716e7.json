@@ -1,0 +1,64 @@
+{
+  "id" : "f5f5a5b0-9ac7-42f6-b1dc-3be1632716e7",
+  "name" : "Obtener lista de películas (parameter)",
+  "request" : {
+    "urlPath" : "/api/movies",
+    "method" : "GET",
+    "queryParameters" : {
+      "version" : {
+        "contains" : "v3"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"movies\": [\n    {\n      \"id\": 5,\n      \"title\": \"The Silence of the Lambs\",\n      \"release_date\": \"1991-02-14\",\n      \"description\": \"A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.\",\n      \"rating\": 8.6\n    },\n    {\n      \"id\": 5,\n      \"title\": \"The Silence of the Lambs\",\n      \"release_date\": \"1991-02-14\",\n      \"description\": \"A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.\",\n      \"rating\": 8.6\n    }\n  ]\n}\n",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f5f5a5b0-9ac7-42f6-b1dc-3be1632716e7",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-04T23:27:21.08916578Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "id" : {
+                "type" : "integer",
+                "description" : "ID de la película"
+              },
+              "title" : {
+                "type" : "string",
+                "description" : "Título de la película"
+              },
+              "release_date" : {
+                "type" : "string",
+                "description" : "Fecha de lanzamiento de la película"
+              },
+              "description" : {
+                "type" : "string",
+                "description" : "Descripción de la película"
+              },
+              "rating" : {
+                "type" : "number",
+                "description" : "Clasificación de la película en una escala de 0 a 10"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 2,
+  "postServeActions" : [ ]
+}

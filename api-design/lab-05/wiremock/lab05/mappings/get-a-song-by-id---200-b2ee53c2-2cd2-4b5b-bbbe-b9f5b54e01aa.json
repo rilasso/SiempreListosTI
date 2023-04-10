@@ -1,0 +1,29 @@
+{
+  "id" : "b2ee53c2-2cd2-4b5b-bbbe-b9f5b54e01aa",
+  "name" : "Get a song by ID - 200",
+  "request" : {
+    "urlPath" : "/songs/4258951087961709784",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n    \"song_name\": \"Song Title\",\n    \"artist_name\": \"Artist Name\"\n}",
+    "headers" : { }
+  },
+  "uuid" : "b2ee53c2-2cd2-4b5b-bbbe-b9f5b54e01aa",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.940814639Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 13,
+  "postServeActions" : [ ]
+}

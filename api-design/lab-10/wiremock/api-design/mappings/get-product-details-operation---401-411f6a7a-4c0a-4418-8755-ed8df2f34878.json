@@ -1,0 +1,25 @@
+{
+  "id" : "411f6a7a-4c0a-4418-8755-ed8df2f34878",
+  "name" : "Get product details operation - 401",
+  "request" : {
+    "urlPath" : "/product/yefwblc1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401
+  },
+  "uuid" : "411f6a7a-4c0a-4418-8755-ed8df2f34878",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-02-14T21:55:53.521522984Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 4
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "4cccd57e-5e8c-476c-b419-db3496477152",
+  "name" : "Eliminar una cuenta - 204",
+  "request" : {
+    "urlPath" : "/accounts/4008890629028274353",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 204
+  },
+  "uuid" : "4cccd57e-5e8c-476c-b419-db3496477152",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.161420443Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 1
+}

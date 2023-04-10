@@ -1,0 +1,25 @@
+{
+  "id" : "0242fee0-a45d-4ede-991f-e3a47669b2d3",
+  "name" : "Crear una cuenta nueva - 400",
+  "request" : {
+    "urlPath" : "/accounts",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 400
+  },
+  "uuid" : "0242fee0-a45d-4ede-991f-e3a47669b2d3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.14913096Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 6
+}

@@ -1,0 +1,37 @@
+{
+  "id" : "18f19449-a137-48b2-96d0-514a73a801a0",
+  "name" : "Add a new song - 500",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "POST",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "Bearer token1234"
+      }
+    },
+    "bodyPatterns" : [ {
+      "equalTo" : "{\n    \"song_name\": \"Song Title2\",\n    \"artist_name\": \"Artist Name2\"\n}"
+    } ]
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "18f19449-a137-48b2-96d0-514a73a801a0",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.935251139Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 21,
+  "postServeActions" : [ ]
+}

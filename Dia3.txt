@@ -1,0 +1,240 @@
+Introducción a los contenedores y sus herramientas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Agenda del Día 
+    Máquinas Virtuales
+    Docker
+    Comandos básicos de Docker
+    Docker vs Máquinas Virtuales
+    Instalación de Docker
+    Configuración de Docker
+    Herramientas alternativas
+    Contenedores
+    Imágenes
+    Volúmenes
+    Dockerfile
+    Docker - Compose
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Máquinas Virtuales 
+¿Que es la virtualización?
+Se trata de crear, gracias a un software, una versión virtual o una plataforma de Hardware
+A este recurso o herramienta, que es capaz de convertir un ordenador físico o en linea
+
+Tipos de virtualización
+    Vitualización de servidor o por Hardware
+    virtualización de software o por sistema operativo
+    Vitualización de red
+    Vitualización de almacenamiento
+    Vitualización de memoria
+    Vitualización de escritorio
+
+Software para virtualización
+    VMWare
+    Hyper-V
+    VirtualBox
+    Virtual PC
+    Xen
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker
+    Sin importar el sistema operativo la aplicación va a funcionar
+    No hay limitante con el sistema operativo
+Tecnología de Contenedores
+    Año 2000
+        Surgio por primera vez el año 2000
+        Creador BSD
+    Año 2001
+        Linux Server se adentra de la Tecnología
+    Año 2008
+        Se empieza a visualizar que es docker y de que esta compuesto
+    Año 2013
+        Lanza su plataforma de codigo abierto
+    Año 2014
+        Docker engine
+    Año 2016
+        Integra su orquestación de enjambre
+    Año 2017
+        Docker enterprise
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es docker?
+    Es una herramineta que permite empaquetar una aplicación y sus dependencias 
+        en un contenedor muy ligero. Es como si tomaras una aplicación con absolutamente 
+        todo lo que necesita para funcionar para poder transportarla sin problema o 
+        cualquier otro servidor Docker instalado.
+
+¿Por qué Docker?
+    Empaqueta software en "contenedores" que incluyen en ellos todo lo necesario para 
+        que dicho software se ejecute, incluidas librerías
+
+    Se puede implementar y ajustar la escala de aplicaciones de una forma rápida en 
+        cualquier entorno con la garantía de que el código se ejecutará
+
+    Docker es como una especie de máquina virtual "liviana", pero la verdad no lo es
+
+    En Docker no existe un hypervisor que virtualize Hardware sobre el cual corra un 
+        sistema operativo completo
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comandos Basicos de Docker
+
+    docker "comando"
+        version                                     Version del docker
+        ps                                          Procesos en ejecución
+        ps -a                                       Todos los procesos activos
+        search "nombre"                             Encontrar todos los repos con ese nombre incluido
+        pull "nombre_completo_de_imagen"            Pull la imagen 
+        image ls                                    Ver imagenes instaladas
+        tag ID_DE_IMAGEN ricardo/Image_Name:tag     NUEVO TAG de imagen
+        rmi ricardo/Image_Name:tag
+        rmi ricardo/Image_Name:tag --force
+        push "nombre_completo_de_imagen"            Subir imagen 
+        run "nombre_del_contenedor"
+        stop "ID_DE_CONTENEDOR"
+        run -d -p 80:80
+        rm "ID_DE_CONTENEDOR"
+        image tage "ID_DE_IMAGEN" nombre/delRepo:TAG
+        push "nombre_completo_de_imagen":TAG  
+        pull       
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Configuración de Docker Hub
+
+    Crear una cuenta
+    Crear un repositorio
+    Pull una imagen 
+    Cambiar tag
+    Correr la imagen 
+    Hacer push de la imagen 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Herramientas alternativas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es Podman?
+
+Es un motor de contenedores como el Docker. A diferencia del docker no se utiliza el servicio
+Se utiliza el root
+
+    Año 2018 
+        Esta herramienta te deja utilizar un pod. Que es el recurso mas minimo para agregar los contenedores
+        Utiliza los mismos comandos en su mayoria que docker 
+        En vez de docker .... se utiliza podman .... 
+        Redhat crea el podman como un cliente propio
+    No más demonios
+        Docker si que tiene un demonio asociado. Podman no tiene un demonio.
+        Totalmente OpenSource
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker vs. Podman
+    Docker 
+        Usa demonio
+        Gestiona solo contenedores
+    Podman
+        No usa demonio
+        Gestiona contenedores y pods
+        No es necesario correr nuestros contenedores como root
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Podman 
+
+    podman build -t nombre:latest .
+    podman run -it nombre:latest sh 
+
+    Crear un pod
+    podman pod create --name wordpress_full -p 8080:80
+
+    Agregar contenedores al pod
+    podman run -d --pod wordpress_full \
+        -e MYSQL_DATABASE=wordpress \
+        -e MYSQL_ROOT_PASSWORD=root \
+        mysql:5.7 \
+        --default-authentication-plugin=mysql_native_password
+
+    podman run -d --pod wordpress_full \
+        -e WORDPRESS_DB_USER=root \
+        -e WORDPRESS_DB_PASSWORD=root \
+        -e WORDPRESS_DB_NAME=wordpress \
+        -e WORDPRESS_DB_HOST=127.0.0.1 \
+        wordpress:5.4.2-php7.2-apache
+
+    podman push rilasso/wordpress:1.0
+    podman images
+    podman ps
+    podman pod ls
+    podman generate --help
+    podman generate kube wordpress_full > wordpress_full.yaml
+    nano wordpress_full.yaml
+    podman pod stop wordpress_full
+
+    nano pod.yaml
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es buildah?
+
+Es una herramienta para gestión de imágenes que está muy ligado al uso de Podman. 
+    Aunque Podman es capaz de construir imágenes de forma muy similar a Docker con 
+    el comando Podman build, el equipo de Redhat también nos ofrece otra herramienta 
+    llamada buildah
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usando Buildah y Podman
+
+Buildah 
+    Se centra en el diseño de imágenes de contenedores y replica todos los comandos 
+        que se encuentran en el DockerFile sin el socket del daemon.
+    Las imágenes de contenedores se pueden crear y mejorar rápidamente, tan solo con 
+        las herramientas y los procesos que sean necesarios para ponerlas en marcha.
+
+Podman
+    Se especualiza en los elementos que se necesitan para mantener y modificar esas 
+        imágenes en un contenedor
+    
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comandos básicos de Buildah
+
+Mismos comandos que Docker y Podman.
+Ademas el comando commit, bud y from.
+    From - hago el llamado de una imagen
+    bud - Funciona para build la imagen
+    commit - para subir la imagen al repo
+        
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+buildah --help
+buildah images
+buildah from centos
+buildah rm --all (elimina todos los contenedores)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

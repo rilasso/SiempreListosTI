@@ -1,0 +1,47 @@
+{
+  "id" : "68a1b997-8f5d-4b77-977b-951e084d816a",
+  "name" : "Obtener información privada (404)",
+  "request" : {
+    "urlPath" : "/api/v1/private",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "absent" : true
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "68a1b997-8f5d-4b77-977b-951e084d816a",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.632677097Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 5,
+  "postServeActions" : [ ]
+}

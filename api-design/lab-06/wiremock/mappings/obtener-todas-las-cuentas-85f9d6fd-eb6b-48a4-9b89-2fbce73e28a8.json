@@ -1,0 +1,35 @@
+{
+  "id" : "85f9d6fd-eb6b-48a4-9b89-2fbce73e28a8",
+  "name" : "Obtener todas las cuentas",
+  "request" : {
+    "urlPath" : "/accounts",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"balance\" : 2.487049493785747E38,\n  \"name\" : \"Romaine Lindgren V\",\n  \"active\" : true,\n  \"currency\" : \"EUR\",\n  \"id\" : 112842269129291794\n}, {\n  \"balance\" : 3.279317335965837E38,\n  \"name\" : \"Dr. Marc Berge\",\n  \"active\" : false,\n  \"currency\" : \"MXN\",\n  \"id\" : 6410576364588137014\n}, {\n  \"balance\" : 1.0006241790627856E38,\n  \"name\" : \"Anton Jones\",\n  \"active\" : true,\n  \"currency\" : \"USD\",\n  \"id\" : 780266760877150279\n}, {\n  \"balance\" : 2.5918445299879534E38,\n  \"name\" : \"Mr. Al Collins\",\n  \"active\" : false,\n  \"currency\" : \"USD\",\n  \"id\" : 6497931340911751096\n}, {\n  \"balance\" : 7.968750343318082E36,\n  \"name\" : \"Esperanza Hilll\",\n  \"active\" : true,\n  \"currency\" : \"EUR\",\n  \"id\" : 1422248647163533291\n}, {\n  \"balance\" : 6.972846464371516E37,\n  \"name\" : \"Mrs. Rheba O'Reilly\",\n  \"active\" : false,\n  \"currency\" : \"EUR\",\n  \"id\" : 3284532136690698432\n}, {\n  \"balance\" : 1.8388758124401734E38,\n  \"name\" : \"Alejandra Glover PhD\",\n  \"active\" : false,\n  \"currency\" : \"MXN\",\n  \"id\" : 7969120158891947125\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "85f9d6fd-eb6b-48a4-9b89-2fbce73e28a8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.135271681Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/Account"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 8
+}

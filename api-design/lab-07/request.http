@@ -1,0 +1,15 @@
+
+#Operacion
+### 200
+GET http://localhost:8000/api/v1/movies  HTTP/1.1
+
+### 200
+GET http://localhost:8000/api/movies  HTTP/1.1
+API-Version: v2
+
+### 200
+GET http://localhost:8000/api/movies?version=v3  HTTP/1.1
+
+### 200
+GET http://localhost:8000/api/v2.1/movies HTTP/1.1
+

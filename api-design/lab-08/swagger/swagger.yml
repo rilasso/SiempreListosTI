@@ -1,0 +1,103 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: API de Saldo de Línea Celular
+basePath: /api
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+
+definitions:
+  Balance:
+    type: object
+    properties:
+      id:
+        type: integer
+        description: ID del saldo
+      phone_number:
+        type: string
+        description: Número de teléfono asociado con el saldo
+      amount:
+        type: number
+        description: Cantidad de dinero en el saldo
+    required:
+      - phone_number
+      - amount
+
+paths:
+  /balances:
+    get:
+      summary: Obtener lista de saldos
+      description: Retorna una lista de todos los saldos de línea celular disponibles
+      responses:
+        '200':
+          description: Lista de saldos
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Balance'
+    post:
+      summary: Crear un nuevo saldo
+      description: Crea un nuevo saldo para un número de teléfono específico con una cantidad inicial
+      parameters:
+        - name: balance
+          in: body
+          description: El saldo que se creará
+          required: true
+          schema:
+            $ref: '#/definitions/Balance'
+      responses:
+        '201':
+          description: El saldo ha sido creado
+          schema:
+            $ref: '#/definitions/Balance'
+  /balances/{id}:
+    get:
+      summary: Obtener un saldo específico
+      description: Retorna la información de un saldo específico según su ID
+      parameters:
+        - name: id
+          in: path
+          description: ID del saldo que se desea obtener
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Información del saldo
+          schema:
+            $ref: '#/definitions/Balance'
+    put:
+      summary: Actualizar un saldo existente
+      description: Actualiza la información de un saldo específico según su ID
+      parameters:
+        - name: id
+          in: path
+          description: ID del saldo que se desea actualizar
+          required: true
+          type: integer
+        - name: balance
+          in: body
+          description: La información de saldo actualizada
+          required: true
+          schema:
+            $ref: '#/definitions/Balance'
+      responses:
+        '200':
+          description: El saldo ha sido actualizado
+          schema:
+            $ref: '#/definitions/Balance'
+    delete:
+      summary: Eliminar un saldo existente
+      description: Elimina un saldo específico según su ID
+      parameters:
+        - name: id
+          in: path
+          description: ID del saldo que se desea eliminar
+          required: true
+          type: integer
+      responses:
+        '204':
+          description: El saldo ha sido eliminado satisfactoriamente

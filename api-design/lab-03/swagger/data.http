@@ -1,0 +1,29 @@
+
+###
+GET  http://localhost:8000/api/v1/producto HTTP/1.1
+
+
+###
+POST http://localhost:8000/api/v1/producto HTTP/1.1
+content-type: application/json
+
+{
+    "descripcion" : "Mouse inalámbrico de rendimiento con desplazamiento ultrarrápido, Ergo, 8K DPI, pista en vidrio, clics silenciosos, USB-C, Bluetooth, Windows, Linux, cromado, grafito",
+    "precio" : 99.99,
+    "id" : 123456,
+    "nombre" : "Logitech MX Master 3S "
+}
+
+###
+PUT  http://localhost:8000/api/v1/producto/123456 HTTP/1.1
+content-type: application/json
+
+{
+    "descripcion" : "Mouse inalámbrico de rendimiento con desplazamiento ultrarrápido, Ergo, 8K DPI, pista en vidrio, clics silenciosos, USB-C, Bluetooth, Windows, Linux, cromado, grafito",
+    "precio" : 79.99,
+    "id" : 123456,
+    "nombre" : "Logitech MX Master 3S "
+}
+
+###
+DELETE  http://localhost:8000/api/v1/producto/123456 HTTP/1.1

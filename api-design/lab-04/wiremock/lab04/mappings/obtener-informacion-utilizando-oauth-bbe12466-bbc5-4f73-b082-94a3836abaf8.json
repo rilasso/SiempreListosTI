@@ -1,0 +1,47 @@
+{
+  "id" : "bbe12466-bbc5-4f73-b082-94a3836abaf8",
+  "name" : "Obtener información utilizando OAuth",
+  "request" : {
+    "urlPath" : "/api/v1/oauth",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "equalTo" : "Bearer e848771f-7555-4507-9e3f-8c8d6ecc781f"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : \"Cuerpo del Mensaje\",\n  \"message\" : \"Autenticacion  OAUTH\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "bbe12466-bbc5-4f73-b082-94a3836abaf8",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.644752206Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 0,
+  "postServeActions" : [ ]
+}

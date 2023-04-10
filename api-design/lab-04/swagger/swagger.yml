@@ -1,0 +1,101 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Ejemplo de API con diferentes tipos de autenticación
+  description: Ejemplo de API con diferentes tipos de autenticación
+host: localhost:8000
+basePath: /api/v1
+schemes:
+  - https
+paths:
+  /public:
+    get:
+      summary: Obtener información pública
+      responses:
+        '200':
+          description: Respuesta exitosa
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: string
+  /private:
+    get:
+      summary: Obtener información privada
+      security:
+        - basicAuth: []
+      responses:
+        '200':
+          description: Respuesta exitosa
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: string
+  /token:
+    get:
+      summary: Obtener información utilizando token
+      security:
+        - tokenAuth: []
+      responses:
+        '200':
+          description: Respuesta exitosa
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: string
+  /api-key:
+    get:
+      summary: Obtener información utilizando clave API
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: Respuesta exitosa
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: string
+  /oauth:
+    get:
+      summary: Obtener información utilizando OAuth
+      security:
+        - oauth2: []
+      responses:
+        '200':
+          description: Respuesta exitosa
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: string
+securityDefinitions:
+  basicAuth:
+    type: basic
+  tokenAuth:
+    type: apiKey
+    name: Authorization
+    in: header
+  apiKeyAuth:
+    type: apiKey
+    name: X-API-Key
+    in: header
+  oauth2:
+    type: oauth2
+    authorizationUrl: https://example.com/oauth/authorize
+    tokenUrl: https://example.com/oauth/token
+    scopes:
+      read: Acceso de solo lectura
+      write: Acceso de lectura y escritura

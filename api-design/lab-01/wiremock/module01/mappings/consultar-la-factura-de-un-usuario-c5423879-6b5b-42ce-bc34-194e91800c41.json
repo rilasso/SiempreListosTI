@@ -1,0 +1,58 @@
+{
+  "id" : "c5423879-6b5b-42ce-bc34-194e91800c41",
+  "name" : "Consultar la factura de un usuario",
+  "request" : {
+    "urlPath" : "/usuario/4258951087961709784/factura/1709784",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"fecha\" : \"2023-10-15Z\",\n  \"monto\" : 50.00,\n  \"items\" : [ {\n    \"cantidad\" : 12,\n    \"nombre\" : \"Tacos al pastor\"\n  }, {\n    \"cantidad\" : 3,\n    \"nombre\" : \"Coca cola\"\n  }, {\n    \"cantidad\" : 1,\n    \"nombre\" : \"Flan de la abuela\"\n  }, {\n    \"cantidad\" : 3,\n    \"nombre\" : \"Micheladas\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c5423879-6b5b-42ce-bc34-194e91800c41",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T00:28:21.651923176Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "fecha" : {
+              "type" : "string",
+              "format" : "date"
+            },
+            "monto" : {
+              "type" : "number",
+              "format" : "double"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "nombre" : {
+                    "type" : "string"
+                  },
+                  "cantidad" : {
+                    "type" : "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 0,
+  "postServeActions" : [ ]
+}

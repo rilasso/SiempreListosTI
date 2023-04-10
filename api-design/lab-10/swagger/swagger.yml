@@ -1,0 +1,144 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Product API"
+  description: "API for managing products"
+host: "localhost"
+tags:
+- name: "product"
+schemes:
+- "https"
+- "http"
+basePath: "/ac/v1/exp/"
+paths:
+  /user/login:
+    get:
+      tags:
+        - "authentication"
+      summary: "Login operation"
+      description: "Performs a login operation and returns a JWT"
+      operationId: "loginUser"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "header"
+        name: "x-request-id"
+        description: ""
+        type: "string"
+        required: true 
+      - in: "header"
+        name: "x-channel"
+        description: ""
+        type: "string"
+        required: true 
+      - name: "username"
+        in: "query"
+        description: "The user name for login"
+        required: true
+        type: "string"
+      - name: "password"
+        in: "query"
+        description: "The password for login in clear text"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful login"
+          schema:
+            type: "object"
+            properties:
+              token:
+                type: "string"
+                example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+        401:
+          description: "Unauthorized"
+  
+  /product:
+    get:
+      tags:
+        - "product"
+      summary: "Get products operation"
+      description: "Retrieves a list of all products"
+      parameters:
+        - in: "header"
+          name: "Authorization"
+          description: "Bearer token"
+          type: "string"
+          required: true
+        - in: "header"
+          name: "x-request-id"
+          description: ""
+          type: "string"
+          required: true 
+        - in: "header"
+          name: "x-channel"
+          description: ""
+          type: "string"
+          required: true 
+      responses:
+        200:
+          description: "Successful retrieval of products"
+          schema:
+            $ref: "#/definitions/products"
+        401:
+          description: "Unauthorized"
+          
+  /product/{Id}:
+    get:
+      tags:
+        - "product"
+      summary: "Get product details operation"
+      description: "Retrieve product details"
+      parameters:
+        - in: "header"
+          name: "Authorization"
+          description: "Bearer token"
+          type: "string"
+          required: true
+        - in: "header"
+          name: "x-request-id"
+          description: ""
+          type: "string"
+          required: true 
+        - in: "header"
+          name: "x-channel"
+          description: ""
+          type: "string"
+          required: true
+      responses:
+        200:
+          description: "Successful retrieval of accounts"
+          schema:
+            $ref: "#/definitions/product"
+        401:
+          description: "Unauthorized"          
+
+definitions:
+  products:
+    allOf:
+    - type: "array"
+      description: ""
+      items:
+        $ref: '#/definitions/product'
+
+  product:
+    type: "object"
+    description: ""
+    required:
+    - "id"
+    properties:
+      id:
+        type: "string"
+      alias:
+        type: "string"
+      name:
+        type: "string"
+      description:
+        type: "string"
+        example: "This is product 1"
+      currency:
+        type: "string"
+      status:
+        type: "string"
+      balance:
+        type: "number"

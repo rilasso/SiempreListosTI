@@ -1,0 +1,63 @@
+{
+  "id" : "051df3ef-1dac-4291-a78e-b9705040ef0d",
+  "name" : "Get product details operation (application/json)",
+  "request" : {
+    "urlPath" : "/product/rv06nth6",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"balance\" : 5.981231650443304E307,\n  \"name\" : \"Mickey Stoltenberg\",\n  \"alias\" : \"37ggfaonrgteikifxohq2c6tctautglsa0rbhcfj1ja0myz78q4rnu1fdlgoceebqeqrnjw9ats9h\",\n  \"description\" : \"Quia dignissimos est. Dolorem sed aut. Magnam repellat officia qui fuga aliquid dignissimos.\",\n  \"currency\" : \"JPY\",\n  \"id\" : \"v68e\",\n  \"status\" : \"bwupv7x0y3uz7m7xrezmdyxuvu15bdxlei8b4av9brk5m9kn6yg6kmxskml1jeqx496xun9imr\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "051df3ef-1dac-4291-a78e-b9705040ef0d",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-02-14T21:55:53.514534033Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "required" : [ "id" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "string"
+            },
+            "alias" : {
+              "type" : "string"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string",
+              "example" : "This is product 1"
+            },
+            "currency" : {
+              "type" : "string"
+            },
+            "status" : {
+              "type" : "string"
+            },
+            "balance" : {
+              "type" : "number"
+            }
+          },
+          "description" : ""
+        }
+      }
+    }
+  },
+  "insertionIndex" : 5
+}

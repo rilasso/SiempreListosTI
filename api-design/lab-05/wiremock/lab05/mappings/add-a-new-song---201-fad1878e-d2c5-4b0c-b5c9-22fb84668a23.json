@@ -1,0 +1,34 @@
+{
+  "id" : "fad1878e-d2c5-4b0c-b5c9-22fb84668a23",
+  "name" : "Add a new song - 201",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "POST",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "Bearer token1234"
+      }
+    }
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "fad1878e-d2c5-4b0c-b5c9-22fb84668a23",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.935251139Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 16,
+  "postServeActions" : [ ]
+}

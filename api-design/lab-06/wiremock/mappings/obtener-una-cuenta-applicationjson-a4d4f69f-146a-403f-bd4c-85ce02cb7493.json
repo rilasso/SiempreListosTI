@@ -1,0 +1,56 @@
+{
+  "id" : "a4d4f69f-146a-403f-bd4c-85ce02cb7493",
+  "name" : "Obtener una cuenta (application/json)",
+  "request" : {
+    "urlPath" : "/accounts/6154022364946197696",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"balance\" : 3.375199733038742E38,\n  \"name\" : \"Riley Considine\",\n  \"active\" : false,\n  \"currency\" : \"EUR\",\n  \"id\" : 8547294963617019503\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a4d4f69f-146a-403f-bd4c-85ce02cb7493",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.155070601Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "balance" : {
+              "type" : "number",
+              "format" : "float"
+            },
+            "currency" : {
+              "type" : "string",
+              "enum" : [ "USD", "EUR", "MXN" ]
+            },
+            "active" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 5
+}

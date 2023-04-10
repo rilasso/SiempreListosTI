@@ -1,0 +1,39 @@
+
+#Operacion
+
+### 
+GET http://localhost:8000/api/v1/public HTTP/1.1
+
+### 200
+GET http://localhost:8000/api/v1/private HTTP/1.1
+Authorization: Basic dXN1YXJpbyBjb250cmFzc2E=
+
+### 401
+GET http://localhost:8000/api/v1/private HTTP/1.1
+
+
+### 200
+GET http://localhost:8000/api/v1/api-key
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+
+### 401
+GET http://localhost:8000/api/v1/api-key
+
+### 200 OAUTH
+POST http://localhost:8000/api/v1/oauth/token 
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=b6b8fa7b-8352-4a5d-980d-d22a2ae3768b
+&client_secret=06e18178-3d00-41a3-9ed3-9cd4ff5bb420
+&scope=core
+
+### 
+
+GET http://localhost:8000/api/v1/oauth
+    Authorization: Bearer e848771f-7555-4507-9e3f-8c8d6ecc781f
+
+###
+
+GET http://localhost:8000/api/v1/oauth
+    Authorization: Bearer e848771f-7555-4507-9e3f-8c8d22

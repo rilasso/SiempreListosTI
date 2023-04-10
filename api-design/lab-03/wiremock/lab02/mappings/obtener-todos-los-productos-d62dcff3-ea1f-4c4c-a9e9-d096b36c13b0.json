@@ -1,0 +1,37 @@
+{
+  "id" : "d62dcff3-ea1f-4c4c-a9e9-d096b36c13b0",
+  "name" : "Obtener todos los productos",
+  "request" : {
+    "urlPath" : "/api/v1/producto",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ {\n  \"descripcion\" : \"Mouse inalámbrico de rendimiento con desplazamiento ultrarrápido, Ergo, 8K DPI, pista en vidrio, clics silenciosos, USB-C, Bluetooth, Windows, Linux, cromado, grafito\",\n  \"precio\" : 99.99,\n  \"id\" : 123456,\n  \"nombre\" : \"Logitech MX Master 3S \"\n}, {\n  \"descripcion\" : \"alfombrilla de mouse para juegos de 240 telas, optimizada para sensores de juego, fricción moderada de superficie, alfombrilla de mouse antideslizante, accesorios para juegos de Mac y PC\",\n  \"precio\" : 9.97,\n  \"id\" : 12345678,\n  \"nombre\" : \"Logitech G Alfombrilla de mouse\"\n} ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d62dcff3-ea1f-4c4c-a9e9-d096b36c13b0",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T03:40:11.880071002Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/components/schemas/Producto"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 7,
+  "postServeActions" : [ ]
+}

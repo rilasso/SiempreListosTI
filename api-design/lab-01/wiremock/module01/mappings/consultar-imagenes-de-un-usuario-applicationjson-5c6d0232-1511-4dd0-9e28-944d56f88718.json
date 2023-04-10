@@ -1,0 +1,37 @@
+{
+  "id" : "5c6d0232-1511-4dd0-9e28-944d56f88718",
+  "name" : "Consultar imágenes de un usuario (application/json)",
+  "request" : {
+    "urlPath" : "/usuario/4258951087961709784/imagen",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[ \"https:/facebook.com/playa.jpg\", \"https:facebook.com/ciudad.jpg\", \"https://facebook.com.com/salida.jpg\" ]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5c6d0232-1511-4dd0-9e28-944d56f88718",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T00:28:21.593008378Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 4,
+  "postServeActions" : [ ]
+}

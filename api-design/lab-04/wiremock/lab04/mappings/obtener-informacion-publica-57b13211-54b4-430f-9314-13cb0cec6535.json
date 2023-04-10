@@ -1,0 +1,42 @@
+{
+  "id" : "57b13211-54b4-430f-9314-13cb0cec6535",
+  "name" : "Obtener información pública",
+  "request" : {
+    "urlPath" : "/api/v1/public",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : \"Cuerpo del Mensaje\",\n  \"message\" : \"Sin Autenticacion\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "57b13211-54b4-430f-9314-13cb0cec6535",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.616908384Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 4,
+  "postServeActions" : [ ]
+}

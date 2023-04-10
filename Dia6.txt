@@ -1,0 +1,119 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Versionar Commits en GIT
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que son los tags?
+
+    Tags o Etiquetas en Git son identificadores asocioados a versiones específicas de un repositorio
+    Se utilizan para marcas versiones, como lanzamiento de software
+    Marcar hitos importantes en el desarrollo de un proyecto
+
+    git tag v1.0
+    git tag -s v1.0
+    git push -tags
+    git show v1.0
+
+    Es una forma de hacer un git log a un tag 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Git Fetch, Pull, Push
+
+- git fetch     se utiliza para descargar los cambios en un respositorio remoto o local
+- git pull      es una combinacion de fetch y merge con la rama actual del repositorio
+- git push      se utiliza para enviar los cambios que estan en el commit
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Archivo .gitignore
+
+    Es un archivo que estipula que archivos no subiran a tu repositorio remoto
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Convenciones para comentar commit
+
+    Dar una oracion corta y clara
+    Da un resumen de la historia creada
+    Incluir el numero de tarea
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GIT Clean, GIT Rebase y GIT Stash
+
+git clean
+    es un comando que se utiliza para eliminar archivos no rastreados en un directorio de trabajo local
+    alias de rm
+
+git rebase
+    se utiliza para intregar cambios de una rama a otr de una manera mas ordenada y lineal
+
+git stash
+    git stash pop       1 stash
+    git stash apply     todos los stash
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GIT Reset y Reflog
+
+git reset
+    es un comando que permite mover la rama actual y la cabeza del 
+        repositorio a un commit anterior
+
+git reflog 
+    muestra un historial detallado de todos los movimientos de la 
+        cabeza del repositorio, incluidos los movimientos realizados 
+        mediante reset o rebase
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Uso Avanzado del commint (amend)
+
+    El comando git commit --amend se utuliza para modificar el commit 
+        enterior en case de que se haya olvidaado algún archivo o mensaje 
+        de confirmación, o para fusionar múltiples confirmaciones en una sola.
+    Esto permite mantener la historia del proyecto más limpia y fácil de seguir
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- GIT checkout 
+
+    `git checkout -- <file>`
+    `git checkout <branch> -- <file>`
+
+- GIT blame
+
+    - Muestra quien y cuando realizo los cambios en cada linea de un archivo determinado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GIT Grep y Log
+
+    `git grep`
+        es un comando que se utiliza para buscar cadenas de terxto dentro de los archivos de un repositorio
+
+    `git log`
+        es un comando que se utiliza para mostrar el historial de confirmaciones en un repositorio
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Submodulos 
+
+    Los submodulos en git permiten incluir un repositorio 
+        de git dentro de otro repositorio git, como una subcarpeta
+    Es una forma de mantener y utilizar proyectos relacionados o independientes
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

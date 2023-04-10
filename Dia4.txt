@@ -1,0 +1,226 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es skopeo? 
+
+Año 2017 
+    Es una herramienta para gestionar, analizar, firmar y transferir imágenes de 
+        contenedores y repositorios de imágenes en los sistemas Linux, Windows y MacOs. 
+        Al igual que Podman y Buildah, Skopeo es un proyecto open source de la comunidad 
+        que no requiere la ejecución de daemons para los contenedores.
+    
+Las operaciones que pueden realizar son:
+    Copiar una imagen desde y hacia varios mecanismos de almacenamiento. Por ejemplo, 
+        podemos copiar imágenes de un registro a otro, sin necesidad de privilegios.
+    Inspeccionar una imagen remota para que muestre sus propiedades, incluidas sus capas, 
+        sin que sea necesario que se descargue la imagen
+    Eliminar una imagen de un repositorio dado
+    Sincronizar un repositorio de imágenes externo con un registro interno
+    Cuando lo requiera el repositorio, Skopeo puede pasar las credenciales y certificados 
+        apropiados para la autetificación.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Instalación de Skopeo 
+
+    sudo apt-get update
+    sudo apt-get -y install skopeo
+    sudo skopeo -v
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Skopeo
+    skopeo inspect docker://nombre/del/repo:tag
+    skopeo inspect docker://registry.fedoraproject.org/fedora:latest
+
+    mkdir -p /var/lib/images/busybox
+    skopeo copy docker://busybox:latest dir://var/lib/images/busybox
+    ls /var/lib/images/busybox/*
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Que es un contenedor? 
+
+    Nacen a partir de una imagen y en estos contenedores podemos solo ejecutar e instalar servicios, 
+        viene siendo como crear una maquina virtual a partir de una imagen (snapshot) pero muchísimo mas ligera
+
+¿Cómo funciona un contenedor?
+
+    Cada contenedor debe tener su ID único
+    Un nombre que sea legible
+    Exponer puertos del contenedor
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Cómo generar un contenedor?
+
+    Los contenedores representan un mecanismo de empaquetado lógico donde 
+        las aplicaciones tienen todo lo que necesitan para ejecutarse.
+
+    Dockerfile -> Build -> DockerImage -> run -> Docker Container
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sistema de contenedores
+
+Un sistema de contenedores Docker se compone principalmente de 5 elementos
+    Demonio:
+        Es el proceso principal de la plataforma
+    Cliente:
+        Es el binario que constituye la interfaz y que permite al ususario efectuar con el Demonio
+    Imagen:
+        Plantilla utilizada para crer el contenedor para la aplicación que queremos ejecutar
+    Registros:
+        Directorios donde se almacenan las imágenes, tanto de acceso público como privado
+    Contenedores:
+        Carpetas donde se almacena todo lo necesario (librerías, dependencias, binarios, etc) 
+            para que la aplicación pueda ajustarse de forma aislada.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Crear Imagen, Crear contendor, Acceder contenedor
+
+    nano Dockerfile
+    docker build -t docker:2.0 .
+    docker images
+    docker run docker:2.0 sh
+    docker run -d -p 80:80 rilasso/debian:1.0 
+    docker ps
+    docker exec -it ID_DEL_CONTENEDOR /bin/bash
+    docker exec -it ID_DEL_CONTENEDOR /bin/sh
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Beneficios de los contenedores
+
+    Los contenedores son una forma optimizada de crear, probar, poner en marcha 
+        y volver a poner en marcha aplicaciones en varios entornos, desde un portátil 
+        local de un desarrollador hasta un centro de datos on-premises e incluso la nube. 
+        Algunos de los beneficios de los contenedores son:
+            Menos Sobrecarga
+            Mayor portabilidad
+            Funcionamiento más constante
+            Mayor eficiencia
+            Mayor desarrollo de aplicaciones
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Cómo funcionan las imágenes?
+
+Diferencias entre imágenes y contenedores
+
+    Imagen:
+        Una imagen es una especie de plantilla.
+        Las imágenes se utilizan para crear contenedores, y nunca cambian.
+        Hay muchas imágenes públicas con elementos básicos como Java, Ubuntu, Apache, etc...
+        Las imágenes se identifican por un ID, y un par de nombre-versión, por ejemplo: ubuntu:latest
+    
+    Contenedor:
+        Son instacias en ejecución de una imagen.
+        Son los que ejecutan cosas, los que ejecutarán nuestra aplicación
+        A partir de una única imagen, podemos ejecutar varios contenedores
+        El contenedor ejecutará una aplicación especifica, incluido el código de la 
+            aplicación específica y los archivos dependientes necesarios
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Volúmenes
+
+Volúmenes en contenedores
+    Como los contenedores conservan los datos en el sistema de archivos del host.
+
+    El contenedor en ejecución quiere conservar datos, en relidad coloca esos 
+        datos en la capa de escritura a través del controlador de alamacenamiento. 
+        Bueno, tenemos algunos problemas con eso!!!
+    
+    ¿Qué ocurre si el contenedor se detiene?
+
+        Los datos ya no se conservan y es de difícil acceso si el contenedor se 
+            detiene como se muestra en el siguiente diagrama
+        Como podemos ver, la capa de escritura está estrechamenete relacionada 
+            con el sistema de archivos del host y es difícil de mover los datos.
+        Tenemos una capa adicional de abstracción con un controlador de almacenamiento 
+            que reduce el rendimiento.
+    
+    Cómo los volúmenes pueden resolver 
+
+    Comandos de Volumenes
+        Inspect nombre
+        rm nombre
+        ls 
+        exec
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Qué es un Dockerfile?
+
+    Es un archivo de texto plano que contiene una serie de instrucciones necesarias para 
+        crear una imagen que, posteriormente, se convertirá en una sola aplicación utilizada 
+        para un determinado propósito
+
+    Dockerfile
+    FROM    <Imagen>
+            <Imagen>:<Tag>
+    VOLUME  VOLUME /var/tmp
+    USER    USER <Name>
+    EXPOSE  EXPOSE <Puerto>
+
+    ¿Cómo hacer un Dockerfile?
+        Hay diferentes maneras de construir nuestro dockerfile, a continuación, 
+        se muestra un dockerfile mediante el cual construiremos una imagen con base 
+        en sistema operativo Ubuntu 14:04, y sus sub-tareas:
+            Actualizar paquetes
+            Instalar paquete nginx
+            Añadir un archivo en una ruta específica dentro del contenedor
+            Exponer puerto
+            Comandos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker-Compose
+
+    ¿Qué es Docker-compose?
+        Es una herramienta para definir y ejecutar aplicaciones Docker multicontenedor 
+            que permite simplificar el uso de Docker a partir de archivos YAML, de está 
+            forma es más sencillo crear contenedores que se relacionen entre sí,
+            conectarlos, habilitar puertos, volumenes, etc
+    
+    Estructura de un Docker-compose
+        Es simplemente un archivo con extensión y formato yml. Para usarlo basta con 
+            crearlo y emepzar a agregar contenido
+        
+        version:'version de docker compose'
+        services: 
+            nombre_del_servicio:
+            variable_de_configuracion:
+            ...
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comandos Basicos de un Docker-compose
+    Docker-compose build
+    Docker-compose -f production.yml build
+    Docker-compose up
+    Docker-compose down
+    Docker-compose restart
+    Docker-compose restart servicios
+    Docker-compose start
+    Docker-compose start servicio
+    Docker-compose stop
+    Docker-compose stop servicio
+    Docker-compose ps
+    Docker-compose ps servicio
+
+
+    docker-compose up -d
+    docker-compose ps
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

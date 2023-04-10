@@ -1,0 +1,25 @@
+{
+  "id" : "0753e3ce-d745-4a6e-8f80-b3d769df73ad",
+  "name" : "Obtener una cuenta - 404",
+  "request" : {
+    "urlPath" : "/accounts/8175826803456981118",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "0753e3ce-d745-4a6e-8f80-b3d769df73ad",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.155931041Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 4
+}

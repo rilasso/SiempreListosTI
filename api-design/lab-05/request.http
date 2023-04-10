@@ -1,0 +1,86 @@
+
+
+### 200 OK
+POST http://localhost:8000/login
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=b6b8fa7b-8352-4a5d-980d-d22a2ae3768b
+&client_secret=06e18178-3d00-41a3-9ed3-9cd4ff5bb420
+&scope=core
+
+### 404 Not Found
+POST http://localhost:8000/api/login
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=b6b8fa7b-8352-4a5d-980d-d22a2ae3768b
+&client_secret=06e18178-3d00-41a3-9ed3-9cd4ff5bb420
+&scope=core
+
+### 200 OK
+GET http://localhost:8000/songs 
+Authorization: Bearer token1234
+
+### 401 Unauthorized
+GET http://localhost:8000/songs 
+# Authorization: Bearer token1235
+
+### 403 Forbidden
+GET http://localhost:8000/songs 
+Authorization: Bearer token1236
+
+### 204 No Content
+GET http://localhost:8000/songs/7564655870752979346
+Authorization: Bearer token1234
+
+
+### 201 Created
+POST http://localhost:8000/songs
+Authorization: Bearer token1234
+Content-Type: application/json
+
+{
+    "song_name": "Song Title",
+    "artist_name": "Artist Name"
+}
+
+    ### 400 Bad Request
+    POST http://localhost:8000/songs
+    Authorization: Bearer token1235
+    Content-Type: application/json
+
+    {
+        "song": "Song Title",
+        "artist": "Artist Name"
+    }
+
+    ### 500 Internal Server Error
+    POST http://localhost:8000/songs
+    Authorization: Bearer token1234
+    Content-Type: application/json
+
+    {
+        "song_name": "Song Title2",
+        "artist_name": "Artist Name2"
+    }
+
+### 401 Unauthorized
+POST http://localhost:8000/songs
+Content-Type: application/json
+
+{
+    "song_name": "Song Title",
+    "artist_name": "Artist Name"
+}
+
+### 403 Forbidden
+POST http://localhost:8000/songs
+Authorization: Bearer token1236
+Content-Type: application/json
+
+{
+    "song_name": "Song Title",
+    "artist_name": "Artist Name"
+}
+

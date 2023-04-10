@@ -1,0 +1,47 @@
+{
+  "id" : "01c9a428-e408-421e-85e7-e5a5d02efbf7",
+  "name" : "Obtener información utilizando clave API (401)",
+  "request" : {
+    "urlPath" : "/api/v1/api-key",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "doesNotMatch" : "json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "01c9a428-e408-421e-85e7-e5a5d02efbf7",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.640822377Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 6,
+  "postServeActions" : [ ]
+}

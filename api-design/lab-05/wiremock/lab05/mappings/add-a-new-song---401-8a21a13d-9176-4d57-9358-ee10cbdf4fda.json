@@ -1,0 +1,34 @@
+{
+  "id" : "8a21a13d-9176-4d57-9358-ee10cbdf4fda",
+  "name" : "Add a new song - 401",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "POST",
+    "headers" : {
+      "Authorization" : {
+        "absent" : true
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "8a21a13d-9176-4d57-9358-ee10cbdf4fda",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.935585124Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 15,
+  "postServeActions" : [ ]
+}

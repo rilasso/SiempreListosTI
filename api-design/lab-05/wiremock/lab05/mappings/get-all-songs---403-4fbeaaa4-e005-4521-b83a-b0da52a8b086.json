@@ -1,0 +1,34 @@
+{
+  "id" : "4fbeaaa4-e005-4521-b83a-b0da52a8b086",
+  "name" : "Get all songs - 403",
+  "request" : {
+    "urlPath" : "/songs",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "Bearer token1236"
+      }
+    }
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "",
+    "headers" : { }
+  },
+  "uuid" : "4fbeaaa4-e005-4521-b83a-b0da52a8b086",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.934774854Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 17,
+  "postServeActions" : [ ]
+}

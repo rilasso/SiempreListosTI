@@ -1,0 +1,355 @@
+Historia del Shell Script
+
+1er Shell Script 
+    Se ejecutaba un comando y habia un comando de salida
+
+2ndo Shell Script 
+    Le dio mayor vision al 1er Shell Script
+    Basado en lenguaje C
+    Crea el editor de texto VI
+    Permite ejecutar varios comandos dentro de un archivo
+    Empieza a leer comandos de un archivo llamado Script
+
+3er Shell Script
+    Le da mejoras al 2ndo Shell Script
+    Agrega funciones avanzadas y comandos mas practicos
+
+4to Shell Script
+    Se crea el BASH (Shell bourne-Again)
+    Linux
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Terminología basica del Shell Script
+
+BASH
+    Interprete de comandos
+    Actua como interfaz entre el Kernel Linux y los usuarios
+    No es una Terminal
+    Se pueden ver los interpretes disponibles desde /etc/shells
+
+Shell Script
+    Se utiliza la extension .sh para todos los archivos 
+    Permite automatizar procesos y reducir la probabilidad de error
+    Acelera las operaciones de forma repetitiva
+    Son ejecutadas por un shell
+
+Prompt
+    Carácter o conjunto de caracteres que se muestran en una linea de 
+        comandos para indicar que está a la espera de órdenes
+    Se muestra en una ventana de terminal cuando se inicia
+    COntiene el caracter "$" para los usuarios sin privilegios y "#" para
+        el administrador
+    En cada distribución de Linux este viene por defecto de una forma diferente.
+
+Editor de Texto
+    Programa informático que permite crear y modificar archivos digitales
+        compuestos únicamente por textos sin formato
+    Incluido en los SO
+    Por coneversión, los archivos creados en DOS y Windows Microsoft tienen extensiones 
+        ".txt". A diferencia de Linux, el usuario tiene libertad total de colocar cualquier
+        extensión
+    Gran variedad de editores de texto
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Terminología Básica**
+
+¿Que es Shell Scripting?
+    Es la técnica (habilidad / destreza) de diseñar y crear Script 
+        (archivo de automatización de tareas) mediante un Shell 
+        (preferiblemente) de un SO
+    
+¿Que es la Shell?
+    Para cualquier SO se refiere al interprete de comandos del SO. 
+        Por lo general es la "consola"
+
+¿Que es el Bash Shell de GNU/Linux?
+    Es un programa informático cuya funcion cosistes en interpretar ordenes
+
+¿Que es un Shell Script?
+    Un shell script es un frupo de comandos, funciones y variables. En teoria un 
+        shell script es una forma de agrupar secuencias de comandos que corren sin 
+        necesidad de que lo escribamos en el prompt.
+
+Shell --> Comandos --> Kernel <---> Hardware CPU
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iniciando con Shell Script
+    Programa 1
+        #!/bin/bash
+        # Script Hello World
+        echo "Hello World!"
+
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comandos de CMD utiles
+    pwd                         //Print working directory
+    ls                          //List
+    ls -la                      //List all
+    nano NombreDeArchivo 
+    chmod +wrx                  // w: Write
+                                // r: Read
+                                // x: Executable
+    chmod 0777                  // Da todos los permisos
+    ps w                        // Muestra todos los procesos en ejecución
+    ./                          // Ejecutar programa
+    sh NombreDeArchivo          //     "        "
+    
+    Directorios
+        rmdir
+        mkdir
+        cd
+        history
+        help
+        exit
+        clear
+        ls
+        tree
+        mvdir
+        
+    Manejo de archivos
+        cat
+        chmod
+        touch
+        cp
+        rm
+        mv /donde/esta/el/archivo /donde/quiero/llevar/el/archivo
+        nano
+        chown               //cambiar el ususario o grupo
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Shebang
+    Nombre que recibe el par de caracteres #!
+    Permite especificar el intérprete de comandos 
+    La sintaxis de esta línea es la secuencia #! seguida del ejecutable del shell deseado
+
+Comentarios 
+    Sirve para documentar las parted de ejecución del script
+
+Contenido
+    Pueden utilizarse multiples elementos
+        (Comandos, Variables, Funciones, 
+        Estructuras de Control, Comentarios)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Shebang 
+    Permite especificar el intérprete de comandos con el que deseamos que sea interpretado el resto del script cuando se usa invocación implícita
+
+    Explícita
+        Se escribe explícitamente qué shell se desea invocar
+    Implícita
+        Se invoca al script como si fuera un ejecutable, lo que requiere asignar 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando History
+    Da el historial de todos los comandos que han sido ejecutados en el terminal
+
+Comando Help 
+    Da detalles de cualquier comando que se le instruya
+
+    Help 
+        comando --help
+        comando -help 
+        comando help
+        -d -m -s
+    Man
+        -f -k comando
+    Info
+        info comando
+
+Comando Grep
+    Utilidad
+        Busqueda de palabras, simbolos, letras, números y cualquier patrón de un archivo
+    Sintaxis
+        grep [opciones] pattern [ARCHIVO]
+        grep: la instrucción de comando 
+        [opciones]: modificadores del comando
+        pattern: el patrón que queremos encontrar con la búsqueda
+        [ARCHIVO]: el archivo en el que estas realizando la búsqueda
+    Opciones
+        -i: no dinstingue mayuscula o minuscula
+
+Comando Alias
+    Da la opcion de simplicficar un comando dandole un Alias
+    alias a= "comando a ejecutar"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Variables
+
+¿Que es una variable?
+    Lugar donde se guarda una información o un valor 
+
+Sintaxis
+    nombre_variable=valor_variable
+    Leer una variable
+    echo $nombre_variable
+
+    Recuperar valor de una variable
+    $nombre_variable
+
+Nombre de una Variable 
+    Sólo puede contener caracteres alfanuméricos y guiones bajos
+    El primer carácter debe ser una letra del alfabeto o "_"
+        (Este ultimo caso suele ser en casos especiales)
+    No pueden contener espacios
+    La mayúsculas y minúsculas importan, "a" es distinto de "A"
+
+Las comillas en bash
+    Comillas simples se guardan en la variable literalmente lo 
+        que hay entre ellas
+    Comilla doble se interpreta el contenido que esta dentro de ellas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Controles de Flujo
+    Van a depender de una acción
+    Ejecución en linea
+        1. Empieza
+        2. Condición
+        3. Termina
+    For loop
+        1. Empieza
+        2. Condición
+        3a. Cierto
+            1. Acción
+        3b. Falso
+        4. Termina
+    If statement
+        1. Empieza
+        2. Condición
+        3a. Cierto
+            1. Acción A
+            2. Termina
+        3b. Falso
+            1. Acción B
+            2. Terminar
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Control de Flujo: For
+Bucle For
+    El bucle for permite iterar / repetir sobre una serie de 
+        elementos de una cadena, lista, rangos, etc
+
+Sintaxis
+    for VARIABLE in LISTA_VALORES;
+    do
+    COMANDO 1
+    COMANDO 2
+    ...
+    COMANDO N
+    done
+
+Lista de valores
+    Puede ser un rango numérico:
+    for VARIABLE in 1 2 3 4 5 6 7 8 9 10;
+    for VARIABLE in {1..10};
+    serie de valores:
+    for VARIABLE in file1, file2, file3;
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Contro de Flujo: If
+
+Condicionales If
+    El control de flujo IF permite evaluar condiciones cuando se cumplan
+        y no se cumplan a través de condiciones numércicos o cadenas de textos 
+
+Sintaxis 
+    Sobre un condicional:
+    If [[CONDICIÓN]];
+    then 
+    COMANDO 1 si se cumple la condición
+    Fi
+
+    Si una condición no se cumple:
+    If [[CONDICIÓN]];
+    then 
+    COMANDO 1 si se cumple la condición
+    else 
+    COMANDO 2 si no se cumple la condición
+    Fi
+
+    mas condiciones concatenando mas if:
+    If [[CONDICIÓN 1]];
+    then
+    COMANDO 1 si se cumple la condición 1 
+    Elif [[CONDICIÓN 2 ]];
+    then 
+    COMANDO 2 si se cumple la condicion 2
+    else
+    COMANDO 3 si no se cumple la condicion 2
+    fi
+
+Condicionales
+    Númerico
+    Operador                Significado
+    -lt                     menor que <
+    -gt                     mayor que >
+    -le                     menor o igual que <=
+    -ge                     mayor o igual que >=
+    -eq                     igual ==
+    -ne                     no igual != 
+
+              
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Control de Flujo: While 
+Bucle While
+    El ciclo while verifica una condicion antes de cada iteracion 
+    y ejecuta el ciclo hasta que se cumpla la condicion
+
+Sintaxis 
+    Script10.sh
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Control de Flujo: UNTIL
+
+Bucle Until
+    Hasta que se cumpla la condición
+
+Sintaxis
+    Script11.sh
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ssh root@45.56.90.205
+contraseña: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cron y CronTab
+
+Automatizar tareas
+Cron
+    Demonio
+CronTab
+    Archivo de Texto
+    Estructura
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CronTab
+
+Minutos (0-59)
+Horas (0-23)
+Días del Mes (1-31)
+Meses (1-12)
+Día de la semana (0-6) (0 es el domingo, o se usa el nombre del día)
+
+* se ejecutara todo el tiempo 
+
+00 19 * * *
+M  H  D M DS 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

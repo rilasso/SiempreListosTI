@@ -1,0 +1,8 @@
+{
+  "services" : [ {
+    "id" : "72nm9",
+    "name" : "module01",
+    "port" : 8000,
+    "rootDir" : "module01"
+  } ]
+}

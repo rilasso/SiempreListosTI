@@ -1,0 +1,56 @@
+{
+  "id" : "ee5c327f-a437-497a-9ce5-bf2a571573e8",
+  "name" : "Actualizar una cuenta (application/json)",
+  "request" : {
+    "urlPath" : "/accounts/7909671975457870438",
+    "method" : "PUT",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"balance\" : 1.7154843646978273E38,\n  \"name\" : \"Carroll Schmeler DDS\",\n  \"active\" : true,\n  \"currency\" : \"MXN\",\n  \"id\" : 9065674809775364834\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ee5c327f-a437-497a-9ce5-bf2a571573e8",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.159855552Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "name" : {
+              "type" : "string"
+            },
+            "balance" : {
+              "type" : "number",
+              "format" : "float"
+            },
+            "currency" : {
+              "type" : "string",
+              "enum" : [ "USD", "EUR", "MXN" ]
+            },
+            "active" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 3
+}

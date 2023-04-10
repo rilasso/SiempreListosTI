@@ -1,0 +1,8 @@
+{
+  "services" : [ {
+    "id" : "ng2g5",
+    "name" : "lab05",
+    "port" : 8000,
+    "rootDir" : "lab05"
+  } ]
+}

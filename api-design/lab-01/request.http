@@ -1,0 +1,25 @@
+
+#Consulta de usuario
+### 200
+GET http://localhost:8000/usuario/4258951087961709784  HTTP/1.1
+### 404
+GET http://localhost:8000/usuario/7564655870752979346 HTTP/1.1
+
+# Consulta de imagenes del usuario
+### 200
+GET http://localhost:8000/usuario/4258951087961709784/imagen HTTP/1.1
+
+### 404
+GET http://localhost:8000/usuario/7564655870752979346/imagen HTTP/1.1
+
+#  Consulta de saldo del usuario
+### 200
+GET http://localhost:8000/usuario/4258951087961709784/saldo HTTP/1.1
+
+### 404
+GET http://localhost:8000/usuario/7564655870752979346/saldo HTTP/1.1
+
+# Consulta de la factura del usuario
+
+### 200
+GET http://localhost:8000/usuario/4258951087961709784/factura/1709784 HTTP/1.1

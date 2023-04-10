@@ -1,0 +1,51 @@
+{
+  "id" : "718e1b58-ca70-46bb-a7a9-f8f20c6db31a",
+  "name" : "Crear un nuevo producto",
+  "request" : {
+    "urlPath" : "/api/v1/producto",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "718e1b58-ca70-46bb-a7a9-f8f20c6db31a",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T03:40:11.892282515Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "required" : [ "descripcion", "id", "nombre", "precio" ],
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "integer",
+              "format" : "int64"
+            },
+            "nombre" : {
+              "type" : "string"
+            },
+            "descripcion" : {
+              "type" : "string"
+            },
+            "precio" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 6,
+  "postServeActions" : [ ]
+}

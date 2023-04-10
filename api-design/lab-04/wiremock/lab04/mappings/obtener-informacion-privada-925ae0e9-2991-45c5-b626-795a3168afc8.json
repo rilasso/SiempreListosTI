@@ -1,0 +1,47 @@
+{
+  "id" : "925ae0e9-2991-45c5-b626-795a3168afc8",
+  "name" : "Obtener información privada",
+  "request" : {
+    "urlPath" : "/api/v1/private",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "Basic"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"data\" : \"Cuerpo del Mensaje\",\n  \"message\" : \"Autenticacion Basica\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "925ae0e9-2991-45c5-b626-795a3168afc8",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-01T23:25:05.632677097Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "message" : {
+              "type" : "string"
+            },
+            "data" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 3,
+  "postServeActions" : [ ]
+}

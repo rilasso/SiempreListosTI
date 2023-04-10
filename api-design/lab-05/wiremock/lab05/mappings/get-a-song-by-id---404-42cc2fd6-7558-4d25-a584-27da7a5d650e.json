@@ -1,0 +1,25 @@
+{
+  "id" : "42cc2fd6-7558-4d25-a584-27da7a5d650e",
+  "name" : "Get a song by ID - 404",
+  "request" : {
+    "urlPath" : "/songs/6137546356583794141",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "42cc2fd6-7558-4d25-a584-27da7a5d650e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T03:55:45.942408379Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 10
+}

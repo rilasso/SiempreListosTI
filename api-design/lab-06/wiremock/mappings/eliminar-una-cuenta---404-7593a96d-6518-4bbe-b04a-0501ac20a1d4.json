@@ -1,0 +1,25 @@
+{
+  "id" : "7593a96d-6518-4bbe-b04a-0501ac20a1d4",
+  "name" : "Eliminar una cuenta - 404",
+  "request" : {
+    "urlPath" : "/accounts/8530043828628896518",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 404
+  },
+  "uuid" : "7593a96d-6518-4bbe-b04a-0501ac20a1d4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-03-03T05:08:26.162107721Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "(none)"
+      }
+    }
+  },
+  "insertionIndex" : 0
+}

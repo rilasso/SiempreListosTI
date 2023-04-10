@@ -1,0 +1,120 @@
+swagger: '2.0'
+info:
+  title: Cuenta Bancaria API
+  version: 1.0.0
+  description: API para manejar una cuenta bancaria
+
+host: localhost:8080
+schemes:
+  - https
+
+paths:
+  /accounts:
+    get:
+      summary: Obtener todas las cuentas
+      description: Retorna todas las cuentas bancarias en el sistema
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Account'
+
+    post:
+      summary: Crear una cuenta nueva
+      description: Crea una nueva cuenta bancaria en el sistema
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: account
+          schema:
+            $ref: '#/definitions/Account'
+      responses:
+        '201':
+          description: Created
+          schema:
+            $ref: '#/definitions/Account'
+        '400':
+          description: Bad Request
+
+  /accounts/{id}:
+    get:
+      summary: Obtener una cuenta
+      description: Retorna la información de una cuenta bancaria específica
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: ID de la cuenta bancaria a obtener
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Account'
+        '404':
+          description: Not Found
+
+    put:
+      summary: Actualizar una cuenta
+      description: Actualiza la información de una cuenta bancaria específica
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: ID de la cuenta bancaria a actualizar
+          required: true
+          type: integer
+        - in: body
+          name: account
+          schema:
+            $ref: '#/definitions/Account'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/Account'
+        '404':
+          description: Not Found
+
+    delete:
+      summary: Eliminar una cuenta
+      description: Elimina una cuenta bancaria específica del sistema
+      parameters:
+        - in: path
+          name: id
+          description: ID de la cuenta bancaria a eliminar
+          required: true
+          type: integer
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not Found
+
+definitions:
+  Account:
+    type: object
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+      balance:
+        type: number
+        format: float
+      currency:
+        type: string
+        enum:
+          - USD
+          - EUR
+          - MXN
+      active:
+        type: boolean

@@ -1,0 +1,51 @@
+{
+  "id" : "51435eb4-62e6-4f3c-b832-3ea06bac5e74",
+  "name" : "Login operation (application/json)",
+  "request" : {
+    "urlPath" : "/user/login",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "password" : {
+        "equalTo" : "i25q0sjh5dfs8kge3hithcnnfsnfz6x87pwdhbslspvow6onu2zk3ehtin0zln0gdl5mbttnctlhwf4rsawb5hqkdn07p9ihknv3oaqz7r5hpf9qlr892846tw9zk13b1b6u5gzxcosrfs34"
+      },
+      "username" : {
+        "equalTo" : "darrel.bogisich"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"token\" : \"evtfpf670u7w4d4r8pr7fyl7ewgl6r8bfh9gg320i08hxwabqt1vzgd9t6rfvxb2qjtb17z33jqxzq2d2epzea4lof9m9tpsh5ihnt53dwhx0406aanwohqpnwewna73ysbeyi4z6ymd4e38dh82iq3cm8371ypynj4qwyze4a7oy8dgeqv547ea\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "51435eb4-62e6-4f3c-b832-3ea06bac5e74",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2023-02-14T21:55:53.35815256Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "loginUser",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "token" : {
+              "type" : "string",
+              "example" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 9
+}
