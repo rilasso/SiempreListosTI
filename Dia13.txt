@@ -1,0 +1,292 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectarte a una máquina virtual desde una máquina virtual
+
+ssh root@45.56.90.205
+password: !a@tr8D82dS4
+
+ssh root@143.42.230.145
+password: !a@tr8D82dS4
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java OOP
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programación orientada a objetos con Java17
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Java a diferencia de otros lenguajes de programacion es la seguridad del codigo. 
+    Se creo en 1995 minetras trabajaba en Sun Microsystems, el cual fue comprado por Oracle quien 
+        sigue su mantenimineto y por tanto evolucionando constatemente
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JAVA SE Standard Edition
+    te ayuda a todo el desarrollo de backend 
+Java EE Enterprise Edition
+    te ayuda con todo lo que se necesita a nivel 
+        empresarial pero cuesta dinero
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java es el lenguaje mas necesitado a nivel de empresa 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sobrecarga 
+    Es cuando uso un componenete igual o el mismo nombre pero cambias los atributos
+Sobreescribir
+    Cuando escribes el mismo codigo pero diferente
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Codigo Fuente -Es Copilado por-> Java Compiles (Java C) -Genera-> ByteCode -Es ejecutado por-> JRE (JVM) 
+    -Crea código de maquina-> CPU -Interpreta la instrucción y carga el proceso-> Maquina
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java 8 -> Java 9 -> Java 11 -> Java 17
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clases comienzan con Mayuscula
+Variables comienzan con minuscula
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+byte -128 hasta 127
+
+short -32768 hasta 32727
+
+int -2147483648 hasta 2147483647
+
+long -9223372036854775808 hasta 9223372036854775807 se utiliza la letra l al final del numero
+
+float se utiliza la letra f
+
+double 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+char: ocupa 2 bytes puede almacenar un solo digito
+
+boolean: ocupa 2 bytes valores de True o False
+
+String: maneja cadenas de caracteres separada por doble comillas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+String y StringBuffer 
+
+    `String claseString = "valor";`
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vectores y Arrays
+
+    Se le conocen como colleciones debido a que tienen algun tipo de dato dependiendo 
+        de las variables que se le inserten
+    
+    Unos ordenados por indice, otros ordenados por tamaño 
+    No siempre funcionan a travez de un identificador unico
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Variables de instancia 
+    Definir los atributos de un objeto
+
+Variable de Clases
+    Similar a la variable de instancia, con la excepción de que sus valores 
+        son los mismos para todas las instacias de la clase
+
+Variables locales
+    Se utilizan dentro de las definiciones de los métodos
+
+No existen variables globales que se ven en todo el programa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conversion de tipos
+
+    Casteo Implícito (Widening Casting)
+    Casteo Explicito (Narrowing Casting)
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conersion de datos 
+
+Necesitan Casteo
+double -> float -> long -> int -> short -> byte -> char
+                            int short byte -> char
+
+No necesitan Casteo
+byte -> short -> int -> long -> float -> double
+              -> char 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suma +
+Resta -
+Multiplicacion *
+Division /
+Modulo %
+
+< Menor que 
+> Mayor que 
+
+++ incremento
+-- decremento
+(Tipo)expresion Casting
+. acceso a variables y metodos
+
+! no es 
+|| or 
+&& and 
+?: Condicional
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+La sentencia if 
+
+if (Expression){
+    sentencias;
+}
+
+if (expresion){
+    sentenciaA;
+}else{
+    sentenciaB;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Switch 
+
+switch(variable){
+    case valor1:
+        sentencias;
+        break;
+    case valor2:
+        sentencias;
+        break;
+    case valorN:
+        sentencias;
+        break;
+    default:
+        sentencias;
+        break;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For
+
+for(inicializacion ; condicion ; incremento){
+    sentencias;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+while 
+
+while (condicion){
+    sentencias;
+}
+
+do while
+
+do{
+    sentencias;
+} while (condicion)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Break
+
+break:
+    El primer uso es terminar un case en la sentencia switch
+
+continue:
+    Es similar al break, pero sale de una seccion del ciclo
+
+return: 
+    Es utilizado para devolver un valor 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Modificador     Clase   Package     Subclase    Otros
+Public           Si       Si          Si         Si
+Protected        Si       Si          Si         No
+No especificado  Si       Si          No         No 
+Private          Si       No          No         No 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Acceso 
+    public o private 
+
+Modificador
+    final o static
+
+Tipo 
+    tipo de dato que va a retornar o devolver el programa
+
+Argumentos 
+    argumentos deben tener su tipo y estar separados por comas, son los datos que necesita la funcion para ejecutarse
+
+Return 
+    La palabra return marca el final de las instrucciones de una función
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Funciones 
+[acceso][modificador] tipo nombre (tipo nombre argumento1, tipo nombre argumento2){
+    instrucciones
+    return;
+}
+
+
+public static int sumar(int num1, int num2){
+    int sumar = num1 + num2;
+    return sumar;
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Codigo muy largo: 
+    A medida que un sistema va creciendo y se hace mas robusta el codigo generado se vuelve muy extenso 
+        haciendose dificil de leer, depurar, matener
+
+Si algo falla, todo se rompe: Ya que con la programacion estructurada el codifo se ejecuta secuencialmente 
+    al momento de que una de esas lineas fallara todo lo demas deja de funcionar
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

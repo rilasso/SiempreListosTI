@@ -25,7 +25,10 @@ mvn -N wrapper:wrapper -Dmaven=3.9.1
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Crear un archivo pom con maven
 
+mvn archetype:generate -DgroupId=com.bgeneral.maven -DartifactId=java-project -DarchetypeArtifactId=maven-archetype-quickstart \
+ -DinteractiveMode=false
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
