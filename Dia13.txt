@@ -267,11 +267,33 @@ Si algo falla, todo se rompe: Ya que con la programacion estructurada el codifo 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+4 elementos 
+    1. Clase 
+    2. Propiedades
+    3. Métodos
+    4. Objetos
 
+4 Pilares:
+    1. Encapsulamiento
+    2. Abstracción
+    3. Herencia
+    4. Polimorfismo (Sobreescribir y Sobrecarga)
+
+
+                    Clase
+                  // || \\
+                 //  ||  \\
+                //   ||   \\
+               //    ||    \\
+            objeto objeto objeto
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Estados o Propiedades (Atributos)
+    Son las caracteristicas de nuestros objetos. Estas propiedades siempre seran sustantivos y pueden traer difiernetes valores 
 
+Comportamiento:
+    Siempre en verbos de accion
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
