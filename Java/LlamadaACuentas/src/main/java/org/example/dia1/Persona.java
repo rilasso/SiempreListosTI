@@ -1,4 +1,5 @@
-package org.example;
+package org.example.dia1;
+import org.example.dia2.Riesgo;
 
 public class Persona {
 
@@ -8,6 +9,25 @@ public class Persona {
         Cedula = cedula;
         Edad = edad;
     }
+
+
+    public Riesgo.CalificacionDeRiesgo getCalificacionDeRiesgo() {
+        return calificacionDeRiesgo;
+    }
+
+    public void setCalificacionDeRiesgo(Riesgo.CalificacionDeRiesgo calificacionDeRiesgo) {
+        this.calificacionDeRiesgo = calificacionDeRiesgo;
+    }
+
+    public Persona(Riesgo.CalificacionDeRiesgo calificacionDeRiesgo, String name, String apellido, int cedula, int edad) {
+        this.calificacionDeRiesgo = calificacionDeRiesgo;
+        Name = name;
+        Apellido = apellido;
+        Cedula = cedula;
+        Edad = edad;
+    }
+
+    private Riesgo.CalificacionDeRiesgo calificacionDeRiesgo;
 
 
     public String getName() {
@@ -46,6 +66,18 @@ public class Persona {
     int Cedula;
     int Edad;
 
+    public boolean isCuentaDeAhorraEx() {
+        return cuentaDeAhorraEx;
+    }
+
+    public void setCuentaDeAhorraEx(boolean cuentaDeAhorraEx) {
+        this.cuentaDeAhorraEx = cuentaDeAhorraEx;
+    }
+
+    boolean cuentaDeAhorraEx = false;
+
+
+
     public boolean isME() {
         return ME;
     }
@@ -58,11 +90,11 @@ public class Persona {
 
     public void mayorDeEdad(int edad){
         if(edad > 18){
-            //ME = true;
-            System.out.println("Cuenta con la edad suficiente para crear una cuenta.");
+            ME = true;
+
         }else{
-            //ME = false;
-            System.out.println("No cuenta con la edad suficiente para crear una cuenta.");
+            ME = false;
+
         }
 
     }

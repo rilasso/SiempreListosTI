@@ -1,6 +1,6 @@
-package org.example;
+package org.example.dia1;
 
-public class CuentaCorriente extends Cuenta{
+public class CuentaCorriente extends Cuenta {
     private int movimiento = 0;
     public CuentaCorriente(Persona persona, double cantidad) {
         super(persona, cantidad);

@@ -1,4 +1,5 @@
-package org.example;
+package org.example.dia1;
+import org.example.dia2.Riesgo;
 
 public abstract class Cuenta {
 
@@ -11,6 +12,7 @@ public abstract class Cuenta {
     }
 
     private Persona persona = null;
+
 
 
     private double cantidad;

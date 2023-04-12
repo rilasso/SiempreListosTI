@@ -1,6 +1,6 @@
-package org.example;
+package org.example.dia1;
 
-public class CuentaDeAhorro extends Cuenta{
+public class CuentaDeAhorro extends Cuenta {
 
     private int movimiento = 0;
     public CuentaDeAhorro(Persona persona, double cantidad) {
