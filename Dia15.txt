@@ -1,0 +1,102 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Java Dia 3 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrays vs Colecciones
+
+Los arrays y conneciones se utilizan para almacenar un grupo de objetos del mismo o diferente tipo, 
+    pero la diferencia fundamental entre ambas, es que, mientras que los arrays tienen un tamaño fijo, 
+    las colecciones en java son totalmente dinamicas
+
+Ventajas de las colecciones respecto a los arrays
+    1. Cambiar el tamaño dinamicamente, y pueden estar ordenadas y desordenadas
+    2. Mayor rendimiento
+    3. Puede contener elementos primitivos, wrapper y onjetos 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrays 
+    es una estructura de datos que nos permite almacenar una gran cantidad de datos de un mismo tipo.
+
+Metodos de Arrays
+    1. lenght
+    2. sort
+    3. 
+    4. 
+
+    Se puede crear un 2D array con tan solo poner [][]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Colecciones 
+    Una coleccion representa un grupo de objetos
+    Estos objetos son conocidos como elementos 
+    Cuando queremos trbajar con un conjunto de elementos, necesitamos un almacen donde poder guardarlo 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Set 
+
+    Define elementos de conjunto y no puede tener elementos duplicados 
+    HashSet
+    TreeSet
+    LinkedHashSet
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Map 
+
+    HashMap
+    TreeMap
+    LinkedHashMap
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Metodo of 
+
+    Si se crea una lista con el metodo .of es una lista, set o hashmap inmutable
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iterable
+
+iterator()
+    Este metodo devuelve un iterador y nos permite recorrer la coleccion de elemetos que tengamos
+
+forEach(Consumer<? super T> action)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programacion Funcional
+
+Hablamos de que es lo que quiero y no como lo hago
+
+Programacion Imperativa 
+    que hacer 
+    como hacerlo
+
+Programacion Declarativa
+    que hacer y no como hacerlo
+
+Coceptos aplicados en programacion Funcional
+    funciones puras
+    Composicion de funciones
+    Estados compartidos
+    Mutabilidad
+    Efecto Secundario
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Funciones puras 
+
+    devuelve un resutlado 
+    almenos tiene un parametro de entrada
+    siempre devuelve mismo resultado si se utilizan mismos parametros
+
+        public static int sum(int x, int y){
+            return x+y;
+        }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

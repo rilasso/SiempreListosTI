@@ -1,0 +1,99 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dia 4 Java 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rest API es una interfaz basada en el estándar HTTP
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Representational State Transfer
+    Es una interfaz basada en el estándar HTTP
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Principios de Rest
+    Utiliza los metodos HTTP de manera explicita
+    No mantiene Estados
+    Expone URIs con forma de directorios
+    Transfiere XML, JavaScript Object Notation (JSON), o ambos
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estructura de GET
+
+Request
+    GET /usuarios?nombre=Zim HTTP/1.1
+
+Response 
+    GET /usuarios?nombre=Zim HTTP/1.1
+    Host: miservidor
+    Content-Type: application/json
+    
+    <usuario>
+        <nombre>Zim</nombre>
+    </usuario>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JAX-RS
+
+Se define como Java API for RESTful Web Services y es una API de Java que permite la creacion de servicios web con REST (Representational State Transfer)
+    Este API dispone de anotaciones dentro de Java
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Principales Anotaciones
+    @Path
+    @Get, @Put, @Post, @Delete y @Head
+    @Produces
+    @Consumes
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Anotaciones para cabeceras
+    @QueryParam
+    @MatrixParam
+    @HeaderParam
+    @CookieParam
+    //Casi no se utilizan:
+        @FormParam
+        @DefaultValue
+        @Context
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Patrones de Diseño 
+
+Patrones Creacionales
+    Es la forma de crear o construir un objeto
+        Factory Method 
+        Abstract Factory 
+        Builder 
+
+Patrones Estructurales
+    Adapter
+    Bridge
+    Composite
+    Proxy
+
+    Decorator
+    Facade
+    Flyweight
+
+Patrones de Comportamineto
+    Chain of Responsibility
+    Command
+    Iterator
+    Mediator
+    Memento
+    Observer
+    State
+    Strategy
+    Template Method
+    Visitor
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
