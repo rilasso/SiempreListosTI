@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Angular
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Introduccion a Angular
+
+    Utiliza TypeScript y se basa en el patron de diselo de arquitectura (MVC) y (MVVM) 
+        para facilitar el desarrollo y la estructuracion de las aplicaciones
+    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que es programacion orientada a componenetes?
+
+    La programacion orientada a componentes se centra en la modularidad, la reutilizacion y la mantenibilidad
+        del software, ya que los componentes pueden ser facilmente sustituidos o actualizados sin afectar a 
+        otras partes del sistema
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que son templates / plantillas
+
+    En el contexto del desarrollo de software, una plantilla o templates es una estructura predefinida que se utiliza 
+        como base para crear algo nuevo. En el desarrollo web, una plantilla se refiere a un archivo HTML que contiene 
+        una estructura basica y un diseño predefinido para una pagina web o una aplicacion web.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que son componenetes y directivas en Angular?
+
+    Los *componentes* encapsulan la interfaz de usuario y su logica
+    Las *directivas* se utilizan para manipular el DOM y agregar comportamiento a los elementos HTML existentes o 
+        crear nuevos elementos personalizados
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Inyeccion de dependencias
+
+    Es un patron de diseño, utilizado en la programacion orientada a objetos, que permite a los objetos 
+        comunicarse entre si; sin tener que conocer los detalles de su implementacion
+    
+    En angular la inyeccion de dependencias se utiliza para gestionar y compartir objetos entre diferentes 
+        componentes y servicios de una aplicacion, lo que facilita la creacion de aplicaciones escalables y mantenibles
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
