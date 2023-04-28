@@ -4,14 +4,34 @@ Introduccion a SQL
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Terminologia SQL
+    SQL
+        El lenguaje de consulta estructurada (SQL) es un lenguaje de programacion para almacenar
+            y procesar informacion en una base de datos relacional. Una base de datos relacional 
+            almacena informacion en forma de table, con filas y colimnas que representan diferentes 
+            atributos de datos y las diversas relaciones entre los valores de datos. Puede usar las
+            instrucciones SQL para almacenar, actualizar, eliminar, buscar y recuperar informacion de 
+            la base de datos. Tambien puede usar SQL para mantener y optimizar el rendimiento de la 
+            base de datos 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Consulta de datos
+    El lenguaje de consulta de datos (DQL) consiste en instrucciones para recuperar datos almacenados
+        en base de datos relacionales.
+    
+Manipulacion de datos
+    Las instrucciones de lenguaje de manipulacion de datos (DML)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lenguaje de Manipulacion de datos
+    Esta sentencia se utiliza para realizar consultas sobre los datos
+    Con esta instruccion podemos insertar los valores de una base de datos
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DDL es un subconjunto de SQL. Es un lenguaje para describir los datos y sus relaciones en una base de datos (ESTRUCTURA)
+El lenguaje de manipulacion de datos (DML) de SQL sirve para acceder y modificar los datos de la base de datos (MANIPULACION)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

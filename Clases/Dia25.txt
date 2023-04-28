@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pruebas Automatizadas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Introduccion a las pruebas Automatizadas
+    El objetivo principal del control de calidad es garantizar que el producto o servicio cumpla con los requisitos y expectativas del cliente.
+    Esto implica las siguientes actividades:
+        Planificacion
+        Evaluacion
+        Ejecucion
+        Mejora Continua
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ventajas de las pruebas Automatizadas
+    Eficiencia: Las pruebas automatizadas pueden realizar tareas repetiticas y complejas con 
+                mayor velocidad y precision que las pruebas manuelas
+    Cobertura: Las pruebas automatizadas pueden realizar una gran cantidad de pruebas en poco 
+                tiempo, lo que permite cubrir una amplia gama de escenarios de pruebas
+    Reutilizacion: Una vez que se han creado las pruebas automatizadas, pueden ser reutilizadas 
+                    en el futuro, lo que ahorra tiempo y recursos
+    Consistencia: Las pruebas automatizadas realizan pruebas de manera consistente, lo que asegura 
+                    que los resultados son reproducibles
+    Mayor confiabilidad: Las pruebas automatizadas reducen la posibilidad de errores humanos y 
+                        mejoran la fiabilidad de las pruebas.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Proceso de automatizacion de Pruebas
+    Identificacion de Pruebas a automatizar
+    Seleccion de la herramiento de automatizacion 
+    Planificar y diseñar pruebas
+    Crear script de pruebas automatizadas
+    Ejecutar pruebas automatizadas
+    Analizar y reportar resultados de pruebas
+    Mantener y actualizar pruebas automatizadas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Porque utilizar Selenium para automatizar?
+    Eficiencia
+    Cobertura
+    Repetibilidad
+    Ahorra tiempo y costos
+    Integracion
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
