@@ -1,0 +1,48 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pruebas Automatizadas dia 2
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Crecimiento y prevalencia de aplicaciones moviles
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Objetivos de las pruebas moviles
+
+    Garantizar la funcionalidad y rendimiento de la aplicacion
+    Asegura una expriencia de usuario positiva y consistente
+    Verifica la compatibilidad en diferentes dispositivos, sistemas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Beneficios de las pruebas moviles
+
+    Mejora la calidad y fiabilidad de la aplicacion
+    Incrementar la satisfaccion y retencio de los usuarios
+    Reducir los costos a largo plazo al solucionar problemas antes del lanzamiento 
+    Protege la reputacion y la marca de la empresa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+adb device 
+    Da una lista de todos los dispositivos conectados a la computadora
+
+adb logcat
+    Da un log de todo lo que ha pasado en la aplicacion
+
+scrpy
+    Muestra el dispositivo conectado
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Beneficios de Karate DSL en la automatizacion de pruebas
+
+    Sintaxis legible y facil de entender
+    Combinacion de pruebas de API y UI
+    Soporte de multiples formatos de datos
+    Reutilizacion de codigo y configuracion
+    Pruebas paralelas y de rendimineto
+    Generacion de informes y documentacion
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
