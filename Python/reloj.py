@@ -10,7 +10,7 @@ def times():
     i = 0
     sec = var.tm_sec
     min = var.tm_min
-    hour = var.tm_hour
+    hour = var.tm_hour 
     day = var.tm_mday 
   
     while i < 1000000:
@@ -36,7 +36,7 @@ def times():
             sec += 1
             os.system('clear')
             print(hour,":", min, ":", sec)
-            time.sleep(0.62)
+            time.sleep(0.65)
             
 
 if __name__ == "__main__":

@@ -39,6 +39,13 @@
 
 #### Dia 25 - 27
 - Pruebas Automatizadas
+    ´´´
+    - Selenium
+    - Appium 
+    - Karate
+    - Robot Framework
+    - jMeter
+    ´´´
 
 #### Dia 28
 - Gherkin
